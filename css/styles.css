@@ -134,29 +134,6 @@ img{
 }
 
 .cover{
-
-	
-	width: 100%;
-	height: 100%;
-	transition: 0.5s ease-in-out;
-	margin: 0 auto;
-	position: fixed;
-	bottom: 0;
-/*	padding: 10px;
-*/
-	left: 0;
-	z-index: 11;
-
-	background-color: white;
-	box-sizing: border-box;
-/*	border: solid 1px #4B00FF;
-*/
-
-
-}
-
-
-.cover.clicked{
 	width: 15%;
 	height: 85%;
 	border-right: solid 1px #4B00FF;
@@ -164,10 +141,30 @@ img{
 	border-top: rgba(75, 0, 255, 0);
 	border-left: rgba(75, 0, 255, 0);
 	transition: 0.5s ease-in-out;
+		box-sizing: border-box;
+		z-index: 11;
 
+	margin: 0 auto;
 
+	bottom: 0;
+	left: 0;
+
+		background-color: white;
+
+	position: fixed;
 
 }
+
+/*
+.cover.clicked{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+
+
+	border: solid 1px #4B00FF;
+
+}*/
 
 .logo{
 	width: 100%;
@@ -198,7 +195,7 @@ img{
 	width: 15%;
 
 }
-.cover.clicked.nicked{
+.cover.nicked{
 	bottom: 0;
 	height: 50%;
 }
@@ -212,9 +209,8 @@ img{
 	margin: 0 auto;
 	padding: 0 0;
 	position: absolute;
-/*	opacity: 0;
-*/
-	z-index: 8;
+
+	z-index: 10;
 
 	top: 0;
 	left: 15%;
@@ -224,16 +220,15 @@ img{
 	overflow: scroll;
 	box-sizing: border-box;
 
+	border-bottom: rgb(75, 0, 255,);
+
 
 }
 
 .info.clicked{
 	width: 85%;
 	height: 100%;
-/*	border-bottom: rgba(75, 0, 255, 0);
-*/	z-index: 10;
-/*	opacity: 1;
-*/
+
 
 
 }
@@ -397,9 +392,6 @@ img{
 		right: 0;
 
 
-	}
-
-	.cover.clicked{
 		width: 60%;
 		height: 15%;
 		left: 40%;
@@ -409,7 +401,15 @@ img{
 		border-top: rgba(75, 0, 255, 0);
 		border-left: rgba(75, 0, 255, 0);
 
+	}
 
+	.cover.nicked{
+
+		left: 80%;
+
+		right: 0;
+		width: 20%;
+		height: 15%;
 
 
 	}
@@ -428,14 +428,12 @@ img{
 		position: absolute;
 	/*	opacity: 0;
 	*/
-		z-index: 8;
-
+		overflow: hidden;
 		top: 15%;
 		left: 0;
 
 		background-color: white;
 
-		overflow: scroll;
 		box-sizing: border-box;
 
 
@@ -444,6 +442,8 @@ img{
 	.info.clicked{
 		width: 100%;
 		height: 85%;
+		overflow: scroll;
+
 	}
 
 	.title.nicked{
@@ -451,13 +451,13 @@ img{
 		height: 15%;
 
 	}
-	.cover.clicked.nicked{
+/*	.cover.clicked.nicked{
 		left: 80%;
 
 		right: 0;
 		width: 20%;
 		height: 15%;
-	}
+	}*/
 
 
 	.feed{

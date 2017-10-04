@@ -2,12 +2,17 @@ $(document).ready(function(){
 
   //MAIN DIVS
     $(".cover").on("click", function(){
-      $(this).toggleClass("clicked");
+      $(this).toggleClass("nicked");
+      $(".title").toggleClass("nicked");
+
+      $(".infoButton").toggleClass("clicked");
+      $(".info").toggleClass("clicked");
+
     });
 
     $(".title").on("click", function(){
       $(this).toggleClass("nicked")
-      $(".cover.clicked").toggleClass("nicked")
+      $(".cover").toggleClass("nicked")
 
       $(".infoButton").toggleClass("clicked");
       $(".info").toggleClass("clicked");
