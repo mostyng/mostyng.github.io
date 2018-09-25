@@ -124,6 +124,15 @@ $(document).ready(function(){
         $(".content-cornell-dive").slideToggle();
     });
 
+    //Close Button Show/hide itself + content
+    $(".project").click(function(){
+        $("#close").show();
+    });
+    $("#close").click(function(){
+        $(".content").slideUp();
+        $("#close").hide();
+    });
+
     let lazy = lazyload();
         $("img.lazyload").lazyload();
     });
