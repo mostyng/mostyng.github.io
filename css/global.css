@@ -34,6 +34,7 @@ h1
 h1:hover
 {
     text-decoration: underline;
+
     color: red;
 }
 
@@ -41,25 +42,12 @@ h2
 {
     font-size: 18px;
     font-weight: lighter;
+
     margin-top: 2%;
     margin-bottom: 10%;
+
     text-align: center;
 }
-
-h3{
-    font-size: 13px;
-    font-weight: 500;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    letter-spacing: 1px;
-    padding-left: 20px;
-    display: none;
-}
-
 p
 {
     font-size: 13px;
@@ -81,10 +69,6 @@ a:hover
 
     color: white;
     background-color: red;
-}
-
-.switch:active{
-    text-decoration: underline;
 }
 
 iframe
@@ -169,7 +153,7 @@ iframe
 
 #chinaAbout{
 }
-#englishAbout p{
+#englishAbout{
 }
 
 .about.clicked
@@ -188,23 +172,10 @@ iframe
 
 .info
 {
+
     float: left;
+
     padding-left: 20px;
-}
-
-#close{
-    display: none;
-    width: 30px;
-    height: auto;
-    position: fixed;
-    z-index: 999;
-    bottom: 40px;
-    left: 40px;
-    cursor: pointer;
-}
-
-#close:hover{
-    stroke: #FF0000;
 }
 
 .sort
@@ -231,7 +202,7 @@ iframe
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    padding-top: 55px;
+    padding-top: 58px;
 }
 .feed h1
 {
@@ -246,25 +217,10 @@ iframe
 .name
 {
     margin: 0 auto;
-    display: flex;
 }
 .name img
 {
     display: none;
-}
-
-.name:hover{
-/*    color: white;*/
-    background-color: #EBEBEB;
-    cursor: pointer;
-}
-.name:hover > h3.proj-info{
-    display: inline;
-}
-.name:hover > img.preview
-{
-    display: block;
-    opacity: 1;
 }
 
 img.preview
@@ -295,12 +251,11 @@ img.preview.savage
     padding: 3%;
 }
 
-.proj-info{
-    color: #A8A8A8;
-}
 
-a.tooltip:hover ~ img.preview{
+h1.tooltip:hover + img.preview
+{
     display: block;
+
     opacity: 1;
 }
 
@@ -437,40 +392,6 @@ img
     height: 100vh;
 }
 
-.row
-{
-    display: flex;
-    box-sizing: border-box;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-.col_micro
-{
-    flex: 1;
-}
-
-.col_small
-{
-    flex: 2;
-}
-
-.col_half
-{
-    flex: 3;
-}
-
-.col_medium
-{
-    flex: 4;
-}
-
-.col_large
-{
-    flex: 6;
-}
-
-
-
 .textBox
 {
     position: relative;
@@ -566,13 +487,6 @@ img
     {
         width: 60%;
         height: auto;
-    }
-    #close{
-        width: 30px;
-    }
-
-    .row{
-        display: block;
     }
 
     img
