@@ -200,11 +200,12 @@ iframe
     z-index: 999;
     bottom: 40px;
     left: 40px;
-    cursor: pointer;
+    mix-blend-mode: difference;
 }
 
 #close:hover{
-    stroke: #FF0000;
+    stroke: #000;
+    cursor: pointer;
 }
 
 .sort
@@ -255,7 +256,7 @@ iframe
 
 .name:hover{
 /*    color: white;*/
-    background-color: #EBEBEB;
+    background-color: #F6F6F6;
     cursor: pointer;
 }
 .name:hover > h3.proj-info{

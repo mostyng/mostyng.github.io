@@ -44,6 +44,10 @@ $(document).ready(function(){
 
     //slide toggle for project content
 
+    $(".hush").click(function(){
+        $(".content-hush").slideToggle();
+    });
+
     $(".seniors").click(function(){
         $(".content-seniors").slideToggle();
     });
