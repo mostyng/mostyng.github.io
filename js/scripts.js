@@ -18,7 +18,6 @@ $(document).ready(function(){
 
     $(".indexSwitch").click(function(){
         $("section.project").show();
-        $(".content").hide();
         $(".about").slideUp();
         $(".feed").addClass("clicked");
 
@@ -132,6 +131,7 @@ $(document).ready(function(){
     $(".project").click(function(){
         $("#close").show();
     });
+
     $("#close").click(function(){
         $(".content").slideUp();
         $("#close").hide();

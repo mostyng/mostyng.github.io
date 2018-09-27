@@ -200,7 +200,6 @@ iframe
     z-index: 999;
     bottom: 40px;
     left: 40px;
-    mix-blend-mode: difference;
 }
 
 #close:hover{
@@ -570,6 +569,8 @@ img
     }
     #close{
         width: 30px;
+        left: 20px;
+        bottom: 20px;
     }
 
     .row{
