@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $(".info").click(function(){
       $(".topBar").toggleClass("clicked");
-      $(".about").slideToggle();
+      $(".about").toggle();
       $(".feed").toggleClass("clicked");
     });
 
@@ -19,26 +19,26 @@ $(document).ready(function(){
     $(".indexSwitch").click(function(){
         $("section.project").show();
         $(".about").slideUp();
-        $(".feed").addClass("clicked");
-
+        $(".feed").removeClass("clicked");
     });
+
     $(".brandSwitch").click(function(){
         $("section.project").hide();
         $("section.project.branding").show();
         $(".about").slideUp();
-        $(".feed").addClass("clicked");
+        $(".feed").removeClass("clicked");
     });
     $(".userSwitch").click(function(){
         $("section.project").hide();
         $("section.project.user").show();
         $(".about").slideUp();
-        $(".feed").addClass("clicked");
+        $(".feed").removeClass("clicked");
     });
     $(".printSwitch").click(function(){
         $("section.project").hide();
         $("section.project.print").show();
         $(".about").slideUp();
-        $(".feed").addClass("clicked");
+        $(".feed").removeClass("clicked");
     });
 
     //slide toggle for project content

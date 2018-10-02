@@ -144,7 +144,7 @@ iframe
     position: absolute;
     z-index: 2;
 
-    display: flex;
+    display: none;
     float: left;
 
     width: 100vw;
@@ -155,7 +155,7 @@ iframe
 }
 .about.clicked
 {
-    display: none;
+    display: flex;
     width: 0;
 }
 .about p
@@ -196,7 +196,7 @@ iframe
 .feed
 {
     position: absolute;
-    display: none;
+    display: block;
     overflow-x: hidden;
     overflow-y: hidden;
     box-sizing: border-box;
@@ -210,7 +210,7 @@ iframe
 }
 .feed.clicked
 {
-    display: block;
+    display: none;
     overflow-y: hidden;
 }
 .heroInfo p{
@@ -583,6 +583,7 @@ img
         width: 100%;
         height: auto;
         flex-wrap: wrap;
+        z-index: 500;
     }
     .about p
     {
@@ -744,7 +745,7 @@ img
     }
     .sort
     {
-        width: 25%;
+        width: 40%;
 
         justify-content: flex-end;
     }
