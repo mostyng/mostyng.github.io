@@ -504,8 +504,12 @@ img[data-src]
 .copyright
 {
     width: 100%;
-
     text-align: center;
+}
+.caption{
+    padding-top: 15px;
+    width: 100%;
+    text-align: left;
 }
 
 
