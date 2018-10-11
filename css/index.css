@@ -58,6 +58,10 @@ p a
 {
     color: red;
 }
+li a{
+    color: red;
+
+}
 
 p
 {
@@ -81,6 +85,12 @@ h2
 
     letter-spacing: 1.25px;
     text-transform: uppercase;
+}
+h3{
+    font-family: times_light;
+    font-size: 5vw;
+    font-weight: lighter;
+    width: 100%;
 }
 
 nav
@@ -130,6 +140,18 @@ nav
     background: white;
 }
 
+.aboutPage{
+    position: absolute;
+    z-index: 10;
+
+    float: left;
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+    background: white;
+}
+
 .me
 {
     width: 100%;
@@ -149,6 +171,14 @@ nav
 .info
 {
     cursor: pointer;
+}
+
+
+.weworkHero
+{
+    border: 1px solid grey;
+    background-color: #F5F5F5;
+    background-image: url('../content/wework/wework_hero.svg');
 }
 .tgoHero
 {
@@ -185,7 +215,7 @@ nav
 }
 .shuffleHero
 {
-    border: 1px solid;
+    border: 1px solid black;
     background-image: url('../content/shuffle/shuffle_hero.svg');
 }
 .heroImage
@@ -254,6 +284,22 @@ nav
 
     flex: 1;
 }
+
+
+
+
+.passwordHero{
+    background-color: #F5F5F5;
+    justify-content: center;
+    vertical-align: middle;
+}
+#password{
+    border: 1px black solid;
+    position:absolute;
+    top: 50%;
+    text-align: center;
+}
+
 
 .row
 {
@@ -355,6 +401,10 @@ nav
 {
     border: 1px black solid;
 }
+.greyBorder
+{
+    border: 1px solid grey;
+}
 .rightCont
 {
     display: flex;
@@ -380,6 +430,9 @@ nav
 {
     width: 50%;
     height: auto;
+}
+.projInfoInternal p{
+        letter-spacing: 1px;
 }
 
 .padding_for_project_section
@@ -414,6 +467,9 @@ nav
 {
     width: 100%;
     height: auto;
+}
+.weworkVideo{
+    margin-bottom: 12%;
 }
 .boxSquare
 {
@@ -489,6 +545,11 @@ nav
     width: 90%;
     height: auto;
 }
+.twoUp{
+    width: 100%;
+    height: auto;
+: 
+}
 img
 {
     transition: opacity .3s;
@@ -528,6 +589,7 @@ img[data-src]
     .projInfoInternal
     {
         font-size: 14px;
+
     }
 
     .largeText
@@ -645,6 +707,9 @@ img[data-src]
         width: 100%;
         margin-bottom: 6%;
     }
+    .twoUp{
+        margin:0;
+    }
     .rightText
     {
         padding-bottom: 3%;
@@ -660,13 +725,7 @@ img[data-src]
 
     h2
     {
-        margin-bottom: 10%;
-
         text-transform: uppercase;
-    }
-    h3
-    {
-        text-align: center;
     }
 }
 
