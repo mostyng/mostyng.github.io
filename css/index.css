@@ -88,8 +88,9 @@ h2
 }
 h3{
     font-family: times_light;
-    font-size: 5vw;
+    font-size: 36px;
     font-weight: lighter;
+    letter-spacing: -1px;
     width: 100%;
 }
 
@@ -617,6 +618,9 @@ img[data-src]
     {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    h3{
+        padding-left: 30px;
     }
     .project-content
     {
