@@ -566,8 +566,11 @@ img[data-src]
 .copyright
 {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
+
 .caption{
     padding-top: 15px;
     width: 100%;
