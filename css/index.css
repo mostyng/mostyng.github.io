@@ -19,6 +19,10 @@
     src: url(../fonts/FGroteskThin-Regular.otf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body
 {
     font-family: f_grotesk;
@@ -43,8 +47,12 @@ body
 a
 {
     text-decoration: none;
-
     color: black;
+}
+
+.homeClick{
+    display: inherit;
+    width: inherit;
 }
 
 a:hover
@@ -177,13 +185,14 @@ nav
 
 .weworkHero
 {
-    border: 1px solid grey;
+/*    border: 1px solid grey;*/
     background-color: #F5F5F5;
     background-image: url('../content/wework/wework_hero.svg');
 }
 .tgoHero
 {
-    background-color: #fff;
+    border: 1px solid black;
+    background-color: #000;
     background-image: url('../content/tgo/tgo_logo.svg');
 }
 /*.tgoHero:hover{
@@ -219,30 +228,9 @@ nav
     border: 1px solid black;
     background-image: url('../content/shuffle/shuffle_hero.svg');
 }
-.heroImage
-{
-    position: relative;
 
-    display: flex;
-    /*    width: 100%;*/
 
-    height: 85vh;
-    margin: 0;
-    padding: 0;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    justify-content: center;
-}
-.landingHero:hover
-{
-    cursor: pointer;
-    transition: .3s;
-
-    opacity: .80;
-}
 .heroInfo
 {
     z-index: 2;
@@ -257,7 +245,8 @@ nav
 }
 .heroInfo p
 {
-    letter-spacing: 1.25px;
+    letter-spacing: 1px;
+    font-size:12px;
 
     color: white;
 
@@ -306,6 +295,7 @@ nav
 {
     display: flex;
 }
+
 
 /*ROWS AND MARGINS*/
 
@@ -361,7 +351,44 @@ nav
     padding-right: 30px;
     padding-left: 30px;
 }
+.heroImage
+{
+    position: relative;
+    flex: 1;
+    height: 85vh;
 
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.landingHero{
+    height: 50vh;
+}
+
+.landingHero:hover
+{
+    cursor: pointer;
+    transition: .3s;
+
+    opacity: .80;
+}
+
+.large{
+    height: 85vh;
+}
+
+.project-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
 .textCont
 {
@@ -594,6 +621,12 @@ img[data-src]
     {
         font-size: 14px;
 
+    }
+    .project-content{
+        flex-direction: column;
+    }
+    .project-row{
+        flex-direction: column;
     }
 
     .largeText
