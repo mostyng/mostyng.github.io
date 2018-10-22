@@ -100,6 +100,7 @@ h3{
     font-weight: lighter;
     letter-spacing: -1px;
     width: 100%;
+    margin-top: 0;
 }
 
 nav
@@ -126,13 +127,6 @@ nav
 
     letter-spacing: 1.25px;
     text-transform: uppercase;
-}
-
-.nav_header:hover
-{
-    transition: .3s;
-
-    opacity: .3;
 }
 
 .about
@@ -633,6 +627,8 @@ img[data-src]
     {
         font-family: f_grotesk;
         font-size: 14px;
+        letter-spacing: .5px;
+
     }
     .landing_text
     {
@@ -656,7 +652,7 @@ img[data-src]
         padding-left: 15px;
     }
     h3{
-        padding-left: 30px;
+        padding-left: 15px;
     }
     .project-content
     {
@@ -690,6 +686,8 @@ img[data-src]
     .largeText
     {
         padding-left: 60px;
+        letter-spacing: .5px;
+
     }
 
     .row
@@ -726,8 +724,8 @@ img[data-src]
     {
         font-size: 14px;
         font-weight: normal;
-
         letter-spacing: .5px;
+
     }
     .contentBox
     {
@@ -775,14 +773,14 @@ img[data-src]
     {
         height: 25vh;
     }
-    .projInfoInternal
-    {
-        padding-left: 30px;
-    }
     .largeText
     {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .projInfoInternal
+    {
+        padding-left: 15px;
     }
     .nav_header
     {
