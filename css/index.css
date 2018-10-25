@@ -222,6 +222,12 @@ nav
     border: 1px solid black;
     background-image: url('../content/shuffle/shuffle_hero.svg');
 }
+.zenniHero{
+    background-image: url('../content/zenni/zenni_hero.svg');
+}
+.ihsHero{
+    background-image: url('../content/ihs/ihs.svg');
+}
 
 
 
