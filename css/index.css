@@ -59,7 +59,7 @@ a:hover
 {
     transition: .3s;
 
-    opacity: .5;
+    opacity: .7;
 }
 
 p a
@@ -94,13 +94,9 @@ h2
     letter-spacing: 1.25px;
     text-transform: uppercase;
 }
-h3{
-    font-family: times_light;
-    font-size: 36px;
-    font-weight: lighter;
-    letter-spacing: -1px;
-    width: 100%;
-    margin-top: 0;
+
+ul{
+    list-style-type: none;
 }
 
 nav
@@ -202,7 +198,6 @@ nav
 }*/
 .museHero
 {
-    background-color: black;
     background-image: url('../content/muse/muse_hero.svg');
 }
 /*.museHero:hover{
@@ -219,7 +214,6 @@ nav
 }
 .shuffleHero
 {
-    border: 1px solid black;
     background-image: url('../content/shuffle/shuffle_hero.svg');
 }
 .zenniHero{
@@ -415,6 +409,10 @@ nav
 
     padding-right: 60px;
 }
+.left.largeText{
+    font-family: f_grotesk;
+    padding-right: 0;
+}
 .leftCont
 {
     display: flex;
@@ -458,6 +456,9 @@ nav
 {
     width: 50%;
     height: auto;
+}
+.projInfoInternal{
+    padding-right: 60px;
 }
 .projInfoInternal p{
         letter-spacing: 1px;
@@ -620,7 +621,7 @@ img[data-src]
     .projInfoInternal
     {
         font-size: 14px;
-
+        padding-right: 0;
     }
     .project-content{
         flex-direction: column;
@@ -634,7 +635,8 @@ img[data-src]
         font-family: f_grotesk;
         font-size: 14px;
         letter-spacing: .5px;
-
+        line-height: 1.5;
+        padding-right: 0;
     }
     .landing_text
     {
@@ -693,7 +695,6 @@ img[data-src]
     {
         padding-left: 60px;
         letter-spacing: .5px;
-
     }
 
     .row
