@@ -222,7 +222,9 @@ nav
 .ihsHero{
     background-image: url('../content/ihs/ihs.svg');
 }
-
+.flagsHero{
+    background-image: url('../content/flags/flags_hero.svg');
+}
 
 
 .heroInfo
