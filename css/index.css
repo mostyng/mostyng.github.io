@@ -21,9 +21,16 @@
 
 @font-face
 {
-    font-family: authentic-90;
+    font-family: authentic;
 
     src: url(../fonts/AUTHENTICSans-90.otf);
+}
+
+@font-face
+{
+    font-family: authentic-bold;
+
+    src: url(../fonts/AUTHENTICSans-130.otf);
 }
 
 *{
@@ -35,8 +42,7 @@
 
 body
 {
-/*    font-family: f_grotesk;*/
-    font-family: authentic-90;
+    font-family: authentic;
 
     overflow-x: hidden;
 
@@ -49,8 +55,6 @@ body
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-
-
 
 .projects.stop
 {
@@ -101,7 +105,7 @@ h1
 }
 h2
 {
-    font-family: f_grotesk;
+    font-family: authentic;
     font-size: 14px;
 
     letter-spacing: 1.25px;
@@ -131,11 +135,10 @@ nav
 
 .nav_header
 {
-    font-family: f_grotesk;
+    font-family: authentic;
     font-size: 14px;
 
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .about
@@ -150,6 +153,17 @@ nav
     padding-left: 30px;
 
     background: white;
+}
+
+.simple
+{
+        width: 50%;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 20px;
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        hyphens: auto;
 }
 
 .aboutPage{
@@ -255,8 +269,8 @@ nav
 */  display: flex;
 
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     justify-content: space-between;
 }
@@ -266,8 +280,10 @@ nav
     font-size:12px;
 
     color: white;
+    font-family: authentic-bold;
 
-    margin-block-start: 1em;
+
+    margin-block-start: 1.5em;
 }
 .blackText p
 {
@@ -427,14 +443,14 @@ nav
 
 .largeText
 {
-    font-family: f_grotesk_thin;
+    font-family: authentic;
     font-size: 24px;
     line-height: 1.3;
 
     padding-right: 60px;
 }
 .left.largeText{
-    font-family: f_grotesk;
+    font-family: authentic-bold;
     padding-right: 0;
 }
 .leftCont
@@ -482,10 +498,12 @@ nav
     height: auto;
 }
 .projInfoInternal{
-    padding-right: 60px;
+    padding-right: 30px;
+    font-family: authentic-bold;
 }
 .projInfoInternal p{
-        letter-spacing: 1px;
+    letter-spacing: 1px;
+
 }
 
 .padding_for_project_section
@@ -643,6 +661,9 @@ img[data-src]
     {
         font-size: 14px;
     }
+    .simple{
+        width: 100%;
+    }
     .projInfoInternal
     {
         font-size: 14px;
@@ -657,7 +678,7 @@ img[data-src]
 
     .largeText
     {
-        font-family: f_grotesk;
+        font-family: authentic;
         font-size: 14px;
         letter-spacing: .5px;
         line-height: 1.5;
@@ -716,6 +737,12 @@ img[data-src]
     {
         padding-left: 60px;
     }
+    .simple{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+
+    }
     .largeText
     {
         padding-left: 60px;
@@ -738,10 +765,12 @@ img[data-src]
     {
         height: 40vh;
         padding: 0 0;
+        margin-bottom: 15px;
     }
     .heroInfo p
     {
         display: none;
+
     }
 
     .textCont
@@ -828,6 +857,12 @@ img[data-src]
 
         letter-spacing: 1px;
     }
+    .simple{
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        hyphens: auto;
+
+    }
 }
 
 /*IPAD Landscape*/
@@ -869,18 +904,3 @@ img[data-src]
 
 
 
-
-.simple{
-    font-size: 2rem;
-    margin: 2%;
-    width: 80%;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-    hyphens: auto;
-}
-@media only screen and (max-width:600px)
-{
-    .simple{
-        width: 95%;
-    }
-}
