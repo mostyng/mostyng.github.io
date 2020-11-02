@@ -1,26 +1,5 @@
 @font-face
 {
-    font-family: f_grotesk;
-
-    src: url(../fonts/FGroteskDemi-Regular.otf);
-}
-
-@font-face
-{
-    font-family: times_light;
-
-    src: url(../fonts/TimesNow-SemiLight.otf);
-}
-
-@font-face
-{
-    font-family: f_grotesk_thin;
-
-    src: url(../fonts/FGroteskThin-Regular.otf);
-}
-
-@font-face
-{
     font-family: authentic;
 
     src: url(../fonts/AUTHENTICSans-90.otf);
@@ -220,7 +199,7 @@ nav
 .rhodyHero
 {
     background-color: #ff7461;
-    background-image: url('../content/rides/rides_logo.svg');
+    background-image: url('../content/rides/rides_hero.svg');
 }
 /*.rhodyHero:hover{
     background-image: url("../videos/rides_ani_logo.gif");
@@ -259,6 +238,12 @@ nav
 }
 .linkedinHero{
     background-image: url('../content/linkedin/linkedin_hero.svg');
+}
+.ibmAssistantHero{
+    background-image: url('../content/ibm/WA-bg.svg');
+}
+.ibmDiscoveryHero{
+    background-image: url('../content/ibm/WD-bg.svg');
 }
 
 
@@ -451,7 +436,7 @@ nav
 }
 .left.largeText{
     font-family: authentic-bold;
-    padding-right: 0;
+    padding-right: 60px;
 }
 .leftCont
 {
@@ -498,7 +483,7 @@ nav
     height: auto;
 }
 .projInfoInternal{
-    padding-right: 30px;
+    padding-right: 60px;
     font-family: authentic-bold;
 }
 .projInfoInternal p{
@@ -509,6 +494,32 @@ nav
 .padding_for_project_section
 {
     height: 100vh;
+}
+
+
+
+/*Video Embed
+*/
+
+.embed-container {
+  --video--width: 1296;
+  --video--height: 540;
+
+  position: relative;
+  padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+  overflow: hidden;
+  max-width: 100%;
+  background: black;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -591,6 +602,7 @@ nav
 .last
 {
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 .vert
@@ -674,6 +686,9 @@ img[data-src]
     }
     .project-row{
         flex-direction: column;
+    }
+    .col_micro{
+        display: none;
     }
 
     .largeText
@@ -780,6 +795,7 @@ img[data-src]
 
         height: auto;
         margin: 0 auto;
+        
     }
     .textCont p
     {
