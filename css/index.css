@@ -113,7 +113,7 @@ nav
 
 .nav_header
 {
-    font-family: sans-serif;
+    font-family: authentic;
     font-size: 16px;
     color: red;
     mix-blend-mode: difference;
@@ -914,6 +914,7 @@ img[data-src]
     }
     .nav_header
     {
+        font-size: 12px;
         letter-spacing: 1px;
     }
     .simple{
