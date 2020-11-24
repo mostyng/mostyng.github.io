@@ -54,16 +54,18 @@ a
 a:hover
 {
     transition: .3s;
-
     opacity: .7;
 }
+/*a:visited{
+    color: rgb(135,0,255);
+}*/
 
 p a
 {
-    color: red;
+    color: blue;
 }
 li a{
-    color: red;
+    color: blue;
 
 }
 
@@ -103,9 +105,8 @@ nav
     z-index: 11;
     top: 0;
 
-    display: flex;
-
-    padding-left: 20px;
+    background-color: white;
+    display: inline-block;
 
 
     justify-content: space-between;
@@ -113,13 +114,22 @@ nav
 
 .nav_header
 {
+    display: inline-block;
+
     font-family: authentic;
     font-size: 16px;
-    color: red;
-    mix-blend-mode: difference;
-
+    background-color: white;
+    padding-left: 15px;
+    padding-right:15px;
 
     letter-spacing: 1px;
+}
+.nav_header a{
+    color: black;
+}
+
+.nav_header a:hover{
+    color: red;
 }
 
 .about
@@ -135,6 +145,8 @@ nav
 
     background: white;
 }
+
+
 
 .simple
 {
@@ -160,6 +172,7 @@ nav
 
     background: white;
 }
+
 
 .me
 {
@@ -319,6 +332,48 @@ nav
     flex-direction: row;
 }
 
+.row>*{
+    flex: 1 1 auto;
+}
+
+.profpic{
+    height: auto;
+    width: 100%;
+}
+
+.patron{
+    font-size: 1.3vw;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        hyphens: auto;
+}
+
+
+.yi{
+    width: 25%;
+    padding-left: 30px;
+}
+.er{
+    width: 50%;
+    padding-left: 30px;
+}
+.san{
+    width: 25%;
+    padding-left: 30px;
+}
 
 /*ROWS AND MARGINS*/
 
@@ -338,7 +393,7 @@ nav
 }
 
 .col_medium
-{
+{   
     flex: 4;
 }
 
@@ -349,7 +404,44 @@ nav
 
 
 
-.landing_text
+.brutal{
+}
+.fake{
+    display: none;
+}
+
+.project-line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    font-size: 1.3vw;
+}
+
+.project-line:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.project-link{
+    border-top: solid black 1px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.project-link.blank{
+
+    border-top: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+
+/*.landing_text
 {
     font-family: times_light;
     font-size: 36px;
@@ -362,7 +454,7 @@ nav
     hyphens: auto;
 
     font-variant-numeric: oldstyle-nums;
-}
+}*/
 
 .first_para
 {
@@ -374,6 +466,13 @@ nav
     padding-right: 30px;
     padding-left: 30px;
 }
+
+.project-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .heroImage
 {
     position: relative;
@@ -438,11 +537,7 @@ nav
 
 
 
-.project-row{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+
 
 .textCont
 {
@@ -724,12 +819,14 @@ img[data-src]
     }
     .project-content{
         flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .project-row{
         flex-direction: column;
     }
     .col_micro{
-        display: none;
+/*        display: none;*/
     }
 
     .largeText
@@ -752,26 +849,72 @@ img[data-src]
     {
         text-indent: 0;
     }
+
+    .patron{
+        font-size: 1.3vw;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    .col_micro.yi{
+        display: block;
+        width: 50%;
+        padding-left: 15px
+    }
+
+
+
+    .er{
+        width: 100%;
+        padding-left: 15px;
+    }
+    .col_micro.san{
+        display: block;
+        width: 100%;
+        padding-left: 15px;
+
+    }
+
+    .project-link{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+    .project-link.blank{
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
 }
 
 @media only screen and (max-width:800px)
 {
     nav
     {
-        padding-right: 15px;
+/*        padding-right: 15px;
         padding-left: 15px;
-    }
+*/    }
     h2{
         font-size: 16px;
     }
     h3{
         padding-left: 15px;
     }
+
+    .brutal{
+        display: none;
+    }
+    .fake{
+        display: block;
+    }
+
     .project-content
     {
-        padding-right: 15px;
+/*        padding-right: 15px;
         padding-left: 15px;
-    }
+*/    }
     .topBar.clicked
     {
         height: auto;
@@ -896,6 +1039,14 @@ img[data-src]
 /*        padding: 0 15px;
 */        letter-spacing: .5px;
     }
+
+    .yi{
+        padding-bottom: 15px;
+    }
+    .er{
+        padding-right: 15px;
+
+    }
 }
 
 @media only screen and (max-width:600px)
@@ -921,7 +1072,11 @@ img[data-src]
         line-height: 1.5;
         letter-spacing: 0.5px;
         hyphens: auto;
+    }
 
+    .col_micro.yi{
+        width: 100%;
+        padding-right: 15px;    
     }
 }
 
