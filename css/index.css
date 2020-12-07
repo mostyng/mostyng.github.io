@@ -342,7 +342,7 @@ nav
 }
 
 .patron{
-    font-size: 1.4vw;
+    font-size: 1.5vw;
 
     position: relative;
 
@@ -363,7 +363,7 @@ nav
 
 
 .yi{
-    width: 50%;
+    width: 25%;
     padding-left: 30px;
 }
 .er{
@@ -415,7 +415,7 @@ nav
     flex-direction: row;
     width: 100%;
 
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .project-line:hover{
@@ -524,12 +524,16 @@ nav
     height: auto;
     margin: 15% auto;
 
-    max-width: 800px;
+    max-width: 960px;
 
     font-size: 24px;
     line-height: 1.5;
 }
-
+.casestudy-pic{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
 
 
 
@@ -556,7 +560,15 @@ nav
     justify-content: flex-start;
 }
 
+.showingWork{
+    background-color: #F3F3F3
+}
+.showingContent{
+    padding-left: 30px;
+}
+.showingText{
 
+}
 
 
 
@@ -825,18 +837,8 @@ img[data-src]
     .project-row{
         flex-direction: column;
     }
-    .col_micro{
-/*        display: none;*/
-    }
 
-    .largeText
-    {
-        font-family: authentic;
-        font-size: 16px;
-        letter-spacing: .5px;
-        line-height: 1.5;
-        padding-right: 0;
-    }
+   
     .landing_text
     {
         font-size: 24px;
@@ -851,7 +853,7 @@ img[data-src]
     }
 
     .patron{
-        font-size: 1.3vw;
+        font-size: 1.5vw;
 
         padding-top: 15px;
         padding-bottom: 15px;
@@ -886,6 +888,10 @@ img[data-src]
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 15px;
+    }
+
+    .showingText{
+        font-size: 18px;
     }
 }
 
@@ -945,11 +951,16 @@ img[data-src]
         padding-top: 15px;
 
     }
-    .largeText
+
+
+    /*.largeText
     {
-        padding-left: 60px;
+        font-family: authentic;
+        font-size: 16px;
         letter-spacing: .5px;
-    }
+        line-height: 1.5;
+        padding-right: 0;
+    }*/
 
     .row
     {
@@ -998,6 +1009,15 @@ img[data-src]
         letter-spacing: .5px;
 
     }
+    .showingContent{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+    .largeText.showingText{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .contentBox
     {
         margin-top: 6%;
@@ -1014,15 +1034,14 @@ img[data-src]
     .leftSq
     {
         width: 100%;
-        margin-bottom: 6%;
+        padding-bottom: 15px;
+    }
+    .leftSq.blackBorder{
+        padding-bottom: 0;
     }
     .twoUp{
         margin:0;
     }
-    /*.rightText
-    {
-        padding-bottom: 3%;
-    }*/
     p
     {
         font-size: 16px;
@@ -1051,13 +1070,21 @@ img[data-src]
 
 @media only screen and (max-width:600px)
 {
+    
+    .profpic{
+        width: 50%;
+        padding-bottom: 15px;
+    }
     .heroImage
     {
         height: 25vh;
     }
     .largeText
     {
-        padding:0;
+        padding: 0;
+    }
+    .largeText.showingText{
+        padding: 0 15px 0 15px;
     }
     .projInfoInternal
     {
