@@ -777,10 +777,11 @@ nav
     height: auto;
 }
 
-/*.tanya{
-    width: 360px;
-    height: 180px;
-}*/
+.tanya{
+    width: 60%;
+    height: auto;
+    float: right;
+}
 
 .twoUp{
     width: 100%;
@@ -815,10 +816,18 @@ img[data-src]
 }
 
 
+@media only screen and (max-width:1200px)
+{
+    .dip{
+        display: none;
+    }
+}
 
 
 @media only screen and (max-width:1024px)
 {
+
+   
     .heroImage
     {
         height: 65vh;
