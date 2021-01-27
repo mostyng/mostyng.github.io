@@ -76,7 +76,7 @@ p
 
 }
 
-h1
+/*h1
 {
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -84,7 +84,7 @@ h1
             user-select: none;
 
          -o-user-select: none;
-}
+}*/
 h2
 {
     font-family: authentic;
@@ -406,9 +406,9 @@ nav
 
 .brutal{
 }
-.fake{
+/*.fake{
     display: none;
-}
+}*/
 
 .project-line{
     display: flex;
@@ -532,7 +532,7 @@ nav
 .casestudy-pic{
     width: 100%;
     height: auto;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -578,7 +578,6 @@ nav
     font-size: 24px;
     line-height: 1.5;
 
-    padding-right: 60px;
 }
 .left.largeText{
     font-family: authentic-bold;
@@ -600,7 +599,7 @@ nav
 }
 .greyBorder
 {
-    border: 1px solid grey;
+    border: 1px solid #EFEDEF;
 }
 .rightCont
 {
@@ -968,14 +967,16 @@ img[data-src]
     }
 
 
-    /*.largeText
+    .largeText
     {
-        font-family: authentic;
         font-size: 16px;
         letter-spacing: .5px;
         line-height: 1.5;
         padding-right: 0;
-    }*/
+    }
+    ol{
+        margin-left: 20px;
+    }
 
     .row
     {
