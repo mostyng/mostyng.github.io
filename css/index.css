@@ -405,10 +405,12 @@ nav
 
 
 .brutal{
+        display: block;
 }
-/*.fake{
+
+.fake{
     display: none;
-}*/
+}
 
 .project-line{
     display: flex;
@@ -1180,6 +1182,8 @@ img[data-src]
         padding-right: 15px;
 
     }
+
+
 }
 
 @media only screen and (max-width:600px)
