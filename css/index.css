@@ -73,7 +73,7 @@ p
 {
     margin-block-start: 0;
     line-height: 1.5;
-
+    text-wrap: pretty;
 }
 
 /*h1
@@ -432,6 +432,7 @@ nav
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
+    text-wrap: balance;
 }
 
 .project-link.blank{
@@ -917,9 +918,9 @@ img[data-src]
 
 @media only screen and (max-width:1200px)
 {
-    .dip{
+    /*.dip{
         display: none;
-    }
+    }*/
 }
 
 
@@ -1023,9 +1024,9 @@ img[data-src]
         padding-left: 15px;
     }
 
-    .brutal{
+    ./*brutal{
         display: none;
-    }
+    }*/
     .fake{
         display: block;
     }
@@ -1169,6 +1170,15 @@ img[data-src]
         width: 100%;
     }
 
+    .project-line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    font-size: 2.5vw;
+    letter-spacing: .08rem;
+}
+
 
     .textCont2{
         letter-spacing: .5px;
@@ -1224,6 +1234,17 @@ img[data-src]
         width: 100%;
         padding-right: 15px;    
     }
+    .project-link.col_micro{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:460px)
+{
+    .project-line{
+        font-size: 3.5vw;
+    }
+    
 }
 
 /*IPAD Landscape*/
@@ -1242,6 +1263,7 @@ img[data-src]
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 {
+
     /* Styles */
 }
 
