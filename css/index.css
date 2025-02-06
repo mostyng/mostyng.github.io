@@ -53,7 +53,7 @@ a
 
 a:hover
 {
-    transition: .3s;
+    transition: .2s;
     opacity: .7;
 }
 /*a:visited{
@@ -95,7 +95,7 @@ h2
 */}
 
 ul{
-    list-style-type: none;
+    list-style-type:disc;
 }
 
 nav
@@ -208,9 +208,13 @@ nav
     background-color: #000;
     background-image: url('../content/tgo/tgo_logo.svg');
 }
-/*.tgoHero:hover{
-    background-image: url("../videos/tgo_hero.gif");
-}*/
+
+.tiaHero{
+    border: 1px solid #A492AC;
+    background-color: #D3A37F;
+    background-image: url('../content/tia_carmen/tia-carmen-hero.png');
+}
+
 .rhodyHero
 {
     background-color: #ff7461;
@@ -263,7 +267,12 @@ nav
 .ggfHero{
     background-image: url('../content/ggf/ggf-hero.svg');
 }
-
+.hpHero{
+    background-image: url('../content/hp/hp-hero.svg');
+}
+.loginHero{
+    background-image: url('../content/login/login-hero.svg');
+}
 
 .heroInfo
 {
@@ -480,7 +489,7 @@ nav
 {
     position: relative;
     flex: 1;
-    height: 85vh;
+    height: 80vh;
 
 
     display: flex;
@@ -626,7 +635,7 @@ input[type='checkbox']
 
     width: 100%;
     height: auto;
-    margin: 15% auto;
+    margin: 10% auto;
 
     max-width: 960px;
 
@@ -916,22 +925,27 @@ img[data-src]
 }
 
 
-@media only screen and (max-width:1200px)
+@media only screen and (max-width:1280px)
 {
     /*.dip{
         display: none;
     }*/
+
+    .heroImage
+    {
+        height: 45vh;
+    }
 }
 
 
 @media only screen and (max-width:1024px)
 {
 
-   
-    .heroImage
-    {
-        height: 65vh;
+    ul{
+        margin-left: 5px;   
     }
+
+    
     .heroInfo p
     {
         font-size: 16px;
@@ -946,8 +960,8 @@ img[data-src]
     }
     .project-content{
         flex-direction: column;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .project-row{
         flex-direction: column;
@@ -1033,9 +1047,9 @@ img[data-src]
 
     .project-content
     {
-/*        padding-right: 15px;
         padding-left: 15px;
-*/    }
+        padding-right: 15px;
+    }
     .topBar.clicked
     {
         height: auto;
@@ -1078,6 +1092,9 @@ img[data-src]
     ol{
         margin-left: 20px;
     }
+    ul{
+        margin-left: 5px;   
+    }
 
     .row
     {
@@ -1095,12 +1112,12 @@ img[data-src]
     }*/
     .col_half p
     {
-        padding-right: 0;
+        padding-right: 16px;
     }
 
     .heroImage
     {
-        height: 40vh;
+        height: 35vh;
         padding: 0 0;
         margin-bottom: 15px;
     }
@@ -1176,7 +1193,7 @@ img[data-src]
     width: 100%;
 
     font-size: 2.5vw;
-    letter-spacing: .08rem;
+    letter-spacing: .05rem;
 }
 
 
@@ -1199,7 +1216,9 @@ img[data-src]
 
 @media only screen and (max-width:600px)
 {
-    
+    ul{
+        margin-left: 15px;   
+    }
     .profpic{
         width: 50%;
         padding-bottom: 15px;

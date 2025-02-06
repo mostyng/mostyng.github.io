@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<head>
+	<title>Mostyn Griffith | HP Tone of Voice</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Mostyn Griffith's portfolio website.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../css/index.css">
+	<link rel="icon"
+	  type="image/png"
+	  href="../favicon_large.png">
+</head>
+<body>
+	<nav>
+		<h1 class="nav_header heroLeft"><a href="../../index.html#target">Mostyn Griffith</a>
+		</h1>
+	</nav>
+
+	<section class="project-content">
+
+	  <div class="heroImage hpHero">
+	      <div class="heroInfo">
+	      	<p class="heroLeft">HP Tone of Voice</p>
+	      	<p class="heroRite">Web Design • Content Design • Animation</p>
+	      </div>
+	  </div>
+
+
+
+
+
+	  <div class="textCont2 largeText2">
+      	<h1>HP Tone of Voice Internal Website</h1>
+      	<p>
+      		Beginning in December 2019, I joined the <a href="https://www.ibm.com/cloud/watson-assistant">Watson Assistant</a> design team after expressing interest in working on the very product I had previously used for an <a href="../rides/rides.html">autonomous vehicles project in college.</a> 
+      	</p>
+      	<p>
+			Watson Assistant is a chatbot building platform that is powered by IBM’s proprietary natural language processing and understanding technologies. It enables companies to more efficiently help customers answer questions, solve issues, and complete tasks.
+		</p>
+		<video class="greyBorder casestudy-pic" loop muted autoplay playsinline>
+		  <source src="assistant/WA-Animation.mp4" type="video/mp4"/>
+		</video>
+	  </div>
+
+
+			
+
+
+
+
+
+
+	  <div class="textCont2 largeText2">
+       	<h2>My Role & Objective</h2>
+  		<p>
+  			I was brought into this project early on as a UX and Visual Designer to draft and execute a new iteration of Watson Assistant. The project was called Actions. In collaboration with design research, development, and product owners, we sought to optimise Assistant for non-technical users and enable them to create chatbots faster than with the current version (Watson Assistant Dialog).
+        </p>	        	
+	  </div>
+
+
+	  <div class='embed-container'>
+	  <iframe src="https://player.vimeo.com/video/469917114" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	  </div>
+
+
+
+	  <div class="textCont2 largeText2"> 
+      	<h2>The Challenge</h2>
+
+	      	<p>
+	      		Our target persona is Tanya, typically a non-developer who has varying levels of domain understanding and expertise. She is responsible for designing conversational content flows and training Watson in her company's domain. Following a series of competitive analysis and research sessions which tested Dialog, the existing version of Assistant, against Tanya-like users we found three key issues:
+	      	</p>
+	      	<ol class="largeText">
+    			<li>
+    				It's often too complicated for non-technical, non-developers to build and manage.
+    			</li><br>
+    			<li>
+    				Branching visualisations are harder to keep track of and require a lot of effort to make changes to an existing conversation flow.
+    			</li><br>
+    			<li>
+    				It often takes a long time to build out your first conversation and see how your end-user or customer will interact with your assistant.
+    			</li>
+    		</ol>
+	  </div>
+
+
+
+
+	  <div class="textCont2 largeText2"> 	
+      	<h2>Actions & Steps – A New Conceptual Model</h2>
+	      	<p>
+	      		To enable our non-technical users to more quickly build an Assistant, we created a new conceptual model that focused on modular conversational components grouped around topics. We called these “Actions” since they are based around a specific task or question that a company’s customer would ask. 
+	      	</p>
+	      	<img class="casestudy-pic" data-src="assistant/WA-Concept-01.png">
+
+	      	<p>
+	      		Actions are composed of smaller components called "Steps", which represent a turn in conversation. Steps represent the clarification questions or final answers in the action. Everything else that the step needs to function like the logic, the response options, or the storage of the user’s response is contained within it.
+	      	</p>
+	      	<img class="casestudy-pic" data-src="assistant/WA-Concept-02.png">
+
+	      	
+	  </div>
+
+
+
+
+
+
+	  
+
+
+
+	  
+
+
+
+	  <!-- PROMPT SECTION -->
+
+	    <div class="textCont2 largeText2"> 	
+	      	<h2>Starting the Conversation</h2>
+
+	      	<p>
+	      		For a customer to begin chatting with your Assistant you have to create a customer "intent". The current version, Dialog, requires Tanya to create customer "intents” separately from the context of her Dialog tree. This creates a conceptual disconnect that many first time users are confused by. Users often need help or onboarding to orient themselves within the product.
+	      	</p>
+	      	<img class="casestudy-pic greyBorder" data-src="assistant/WA-DIALOG-Intent.gif">
+
+
+				<!-- COLLAPSIBLE PROMPT SECTION -->
+		      	<div class="wrap-collapsible"> <input id="collapsible1" class="toggle" type="checkbox"> 
+		      		<label for="collapsible1" class="lbl-toggle">See our solution</label>
+
+		      		<div class="collapsible-content">
+		      		<div class="content-inner">
+			  		
+			  		<p>
+			  			To improve on the existing experience we wanted to focus Tanya on the task at hand. Instead of separating the intent creation section from the conversation builder, we integrated intents as the first thing Tanya creates in her Action.
+			  		</p>
+
+			  		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Process-Prompt-01.jpg">
+
+			  		<p>
+			  			When Tanya goes to create her first Action, she is prompted to answer a simple question: "What does your customer want to accomplish?" We wanted to prime her to think from the perspective of her customer/end-user and come up with a compelling first prompt and example for her assistant to train on.
+			  		</p>
+
+			  		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Prompt-Modal-01.gif">
+
+			  		<p>
+			  			Once inside her newly created action, she has the option to add additional training examples to cast a wider net on the various ways her customers would trigger the same action. In this example, she enters sentence variations on how a customer would request a COVID test.
+			  		</p>
+
+			  		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Actions-Intents.gif">
+				  	</div>
+			  		</div>
+
+			  	</div>
+
+
+		</div>
+
+
+		
+
+		<!-- CONTENT AUTHORING -->
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Content-First Authoring</h2>
+  	  		<p>
+  				In Dialog, Tanya selects the specific node branch she wants to edit, triggering the content authoring section to slide out from the right and cover up her node diagram. This design lacked focus and a clear direction since Tanya is presented with so much information to process when she goes to configure her node.
+  			</p>
+  			<img class="casestudy-pic greyBorder" data-src="assistant/WA-DIALOG-Authoring.gif">
+				
+
+				<!-- COLLAPSIBLE CONTENT AUTHORING SECTION -->
+		      	<div class="wrap-collapsible"> <input id="collapsible2" class="toggle" type="checkbox"> 
+		      		<label for="collapsible2" class="lbl-toggle">See our solution</label>
+
+		      		<div class="collapsible-content">
+		      		<div class="content-inner">
+			  		
+
+
+					<p>
+						In order to remedy the issues found in the Dialog editor, we decided to strip out many of the unnecessary elements within the authoring section. By utilising progressive disclosure as a guiding principle, we wanted to display only the most necessary elements on the page first. Any deeper configuring elements were nested within dropdowns and modals that could provide Tanya with additional context.
+					</p>
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Process-Authoring.jpg">
+
+					<p>
+						The authoring section in the center of the page allows Tanya to focus on the three major pieces within each step. One – does this step require conditions to trigger? Two – what is the assistant saying to your customer? Three – what happens after the step finishes? Additional configuration options reveal themselves after further interaction from Tanya.
+					</p>
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Actions-3-Outline.gif">
+			  		</div>
+			  		</div>
+
+			  	</div>
+
+		</div>
+
+
+
+
+		<!-- OUTLINE PANEL -->
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Organising Your Conversation</h2>
+				<p>
+					To organise your conversation, Dialog relies on the traditional tree-like branching structure that many of our competitors use. As you can see from the video below, once you have a large enough Assistant, your node tree can become bloated and unwieldy. This costs Tanya and her team hours of per week of searching, scanning and clicking into nodes, folders, and child-nodes in order to make simple changes to her Assistant.
+				</p>
+				<img class="casestudy-pic greyBorder" data-src="assistant/WA-Dialog-Tree.gif">
+
+
+
+				<!-- COLLAPSIBLE OUTLINE PANEL SECTION -->
+		      	<div class="wrap-collapsible"> <input id="collapsible3" class="toggle" type="checkbox"> 
+		      		<label for="collapsible3" class="lbl-toggle">See our solution</label>
+
+		      		<div class="collapsible-content">
+		      		<div class="content-inner">
+			  		
+
+
+					<p>
+						Luckily for Tanya, our modular conceptual model does away with the clutter and confusing web of nested nodes and connections. Actions sit at the highest level in the Actions table. No more scanning through endless vague, unnamed nodes to locate what you need to edit.
+					</p>
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Actions-4-Actions-Table.png">
+
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Process-Outline-01.jpg">
+
+					<p>
+						Within an Action, you have steps on the left in the Outline Panel. Step tiles allow Tanya to get a quick view into the content within each Step, making it easier for her to orient herself within an Action. They are also dynamic in that they can be easily rearranged if Tanya wants to refactor her flow, no more copying, pasting, and deleting nodes!
+					</p>
+
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-AUTHORING-A.gif">
+
+
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Outline-Step-Reordering.gif">
+
+					<p>
+						As we continued to iterate on the step tiles, we looked to take more visual cues from the  Preview panel. In doing this, Tanya is able to more quickly see how her work in the Actions editor directly translates to her customer's end experience.
+					</p>
+
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Process-Outline-02.jpg">
+
+					<img class="casestudy-pic greyBorder" data-src="assistant/WA-Step-Tile-Future.png">
+
+
+			  		</div>
+			  		</div>
+
+			  	</div>
+			
+		</div>
+		
+
+
+		<!-- PREVIEW PANEL -->
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Previewing Your Work</h2>
+
+	      		<p>
+	      			Once Tanya is in a good place and ready to test her conversation, she goes to open the Preview panel. In Dialog, this panel slides out, covering up the majority of the content authoring section, thus preventing her from making changes on the fly.
+	      		</p>
+	      		<img class="casestudy-pic greyBorder" data-src="assistant/WA-DIALOG-Preview.gif">
+
+
+	      		<!-- COLLAPSIBLE OUTLINE PANEL SECTION -->
+		      	<div class="wrap-collapsible"> <input id="collapsible4" class="toggle" type="checkbox"> 
+		      		<label for="collapsible4" class="lbl-toggle">See our solution</label>
+
+		      		<div class="collapsible-content">
+		      		<div class="content-inner">
+			  		
+
+
+					<p>
+		      			To improve on this, we wanted to make the new Preview panel non-obstructive, giving it its own space on the right. The panel is also a 1:1 reproduction of the fully customisable “Webchat” Preview panel. This allows her to see exactly how her customer or end-user would see it in practise.
+		      		</p>
+		      		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Actions-7-Preview-Actions.gif">
+
+		      		<p>
+		      			We also wanted the panel to better help Tanya in diagnosing issues in her conversation. To do that, we provided her with Action tags that enable her to both see which Action has been triggered in her conversation and give her a link to go straight to the Action in question.
+		      		</p>
+		      		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Actions-8-Preview-Shortcut.gif">
+
+		      		<p>
+		      			As we began testing out the first high-fidelity prototypes and product alphas we found that some test-users would forget to save their work before seeing in practise in the Preview panel. To solve for this we iterated on different ways to nudge users towards saving their work before previewing. What found the most success was a persistent dynamic banner that begins by telling her to save, indicating her assistant is training, then a success banner once finished.
+		      		</p>
+
+		      		<img class="casestudy-pic greyBorder" data-src="assistant/WA-Process-Preview-01.jpg">
+
+		      		<video class="greyBorder" style="width: 100%;" loop muted autoplay playsinline>
+		      		  <source src="assistant/WA-Preview-Training.mp4" type="video/mp4"/>
+		      		</video>
+
+			  		</div>
+			  		</div>
+
+			  	</div>
+
+	      			
+		</div>
+
+
+
+
+
+
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Outcomes & Impacts</h2>
+				<p>
+					This product concept had the goal of optimizing Assistant for non-technical users. In pursuit of that goal, Actions became successful in enabling those users to create chatbots 60% faster  than with the current Dialog version. This meant reducing what used to take an hour to just 20 minutes! We were also able to achieve a 30% increase in new user conversion. Watson Assistant currently services more than ~111M monthly active users.
+				</p>
+
+				<p>
+					Check out some of our team's collaborations with <a href="https://newsroom.ibm.com/2020-04-02-IBM-Offers-Watson-Assistant-for-Citizens-to-Provide-Responses-to-COVID-19-Questions">local and national governments</a> across the globe to inform and help citizens with COVID-19.
+				</p>
+
+				<img class="casestudy-pic" src="watson-assistant-actions.gif">
+		</div>
+
+
+
+
+
+
+
+
+
+		<!-- ANIMATIONS -->
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Animation Work</h2>
+
+	      		<p>
+	      			In addition to the UX/UI work I contributed, I was given the opportunity to use some of my visual skills to create various short-form animations to illustrate how Watson Assistant: Actions functioned at a high level.
+	      		</p>
+	      	</div>
+
+	      	<div class="textCont">
+	      	  <div class="row">
+	      	  	<div class="col_micro">
+	      	  		<video class="twoUp" loop muted autoplay playsinline>
+	      	  		  <source src="assistant/wa-animation-01-mid.mp4" type="video/mp4"/>
+	      	  		</video>
+	      	  	</div>
+	      	      <div class="col_micro">
+	      	      	<video class="twoUp" loop muted autoplay playsinline>
+	      	      	  <source src="assistant/wa-animation-03-long.mp4" type="video/mp4"/>
+	      	      	</video>
+	      	      </div>
+	      	      <div class="col_micro">
+	      	  		<video class="twoUp" loop muted autoplay playsinline>
+	      	  		  <source src="assistant/wa-animation-02-short.mp4" type="video/mp4"/>
+	      	  		</video>
+	      	  	</div>
+	      		</div>
+	      	</div>
+
+
+
+		
+
+
+
+
+	  <!-- <div class="textCont">
+	  	    <div class="row">
+	  	  	  	<div class="col_half leftCont">
+	  	  	  		<img class="leftSq" src="watson-assistant-actions.gif">
+	  	  	  		</video>
+	  	  	  	</div>
+	  	        <div class="col_half largeText rightCont">
+	  	       	 	<p class="rightText">
+	  	       	 		Get another look into our team's work in this case study written by our lead product manager, Blake McGregor: <a href="https://medium.com/ibm-watson/why-is-it-still-so-hard-to-build-a-useful-chatbot-daa46da6a00e">Why is it STILL so hard to build a useful chatbot?</a>
+	  	       	 	</p>
+	  	        </div>
+	  	    </div>
+	  </div> -->
+
+
+
+
+
+	  <!-- Copyright -->
+	  <div class="textCont last">
+	  <div class="row">
+	  	  <div class="col_large copyright">
+	          <p>© Mostyn Griffith 2021</p>
+	      </div>
+	  </div>
+	  </div>
+
+	  </section>
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/scripts.js"></script>
+</body>
+
+</html>
