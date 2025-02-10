@@ -42,6 +42,45 @@ $(document).ready(function(){
     //   });
 
 
+    const video = document.querySelector('#custom-video');
+    if(video) {
+      video.playbackRate = 1.5;
+      video.play();
+      setTimeout(() => {
+        console.log('\nvideo.currentTime = ', video.currentTime);
+        // console.log('video.durationTime = ', video.durationTime);
+        console.log('video.duration = ', video.duration);
+        console.log('\nvideo.playbackRate = ', video.playbackRate);
+        console.log('video.volume = ', video.volume);
+      }, 500);
+      setTimeout(() => {
+        video.pause();
+      }, 1000);
+    }
+
+    // <script type="application/javascript">
+
+    // function resizeIFrameToFitContent( iFrame ) {
+
+    //     iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    //     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+    // }
+
+    // window.addEventListener('DOMContentLoaded', function(e) {
+
+    //     var iFrame = document.getElementById( 'iFrame1' );
+    //     resizeIFrameToFitContent( iFrame );
+
+    //     // or, to resize all iframes:
+    //     var iframes = document.querySelectorAll("iframe");
+    //     for( var i = 0; i < iframes.length; i++) {
+    //         resizeIFrameToFitContent( iframes[i] );
+    //     }
+    // } );
+
+    // </script>
+
+
 
 
 

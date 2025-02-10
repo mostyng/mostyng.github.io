@@ -27,9 +27,12 @@
 
 
 	  <div class="textCont2 largeText2">
-      	<h1>Team Katherine: Authentication Multi-select</h1>
+      	<h1>Increasing account security by encouraging users to setup multiple authentication methods</h1>
       	<p>
-      		Following updates to the design of the authentication selection screen, Team Katherine next task was to devise ways to get users to select more than one authentication method when creating an account. 
+      		Following updates to the design of the authentication selection screen, Team Katherine's next task was to enable and encourage users to select multiple authentication methods when creating an account.
+      	</p>
+      	<p>
+      		In November 2021, Login.gov only let users to set up only one Multi-Factor Authentication (MFA) method from the MFA Selection screen when first creating an account. 
       	</p>
 	  </div>
 
@@ -37,19 +40,20 @@
 	<div class="textCont2 largeText2"> 
 	  	<h2>The Challenge</h2>
       	<p>
-      		In November 2021 Login.gov allowed users to set up only one Multi-Factor Authentication (MFA) method from the MFA Selection screen when first creating an account. 
+      		Since the current functionality limits users to only setting up one authentication method at account creation, many users don't realize they can add multiple MFA methods from their account page. 
       	</p>
       	<p>
-      		Since the current functionality limits users to only setting up one authentication method at account creation, many users don't realize they can add multiple MFA methods from their account page. Having only one MFA method increases their chances of being locked out and needing to go through the account recovery process. 
+      		Having only one MFA method increases their chances of being locked out and having to delete their account before creating a new one.
       	</p>
+      	<img class="casestudy-pic greyBorder" data-src="login-2-multi/delete.png">
+
 	</div>
 
 
 	<div class="textCont2 largeText2"> 
       	<h2>Goals & Questions</h2>
-
       		<p>
-      			We are looking to determine if enabling and encouraging users to create 2 MFA methods when first creating an account would:
+      			We looked to determine if enabling and encouraging users to create 2 MFA methods when first creating an account would:
       		</p>
       		<ul class="largeText">
     			<li>
@@ -59,7 +63,7 @@
     				Decrease the number of Login.gov support tickets
     			</li><br>
     			<li>
-    				Users would add a second method if it was strongly encouraged by the content
+    				Have users add a second method if it was strongly encouraged by the content
     			</li></br>
     		</ul>
 
@@ -81,112 +85,123 @@
     		</ul>
 	  </div>
 
-
-
-
-
 	  <div class="textCont2 largeText2"> 
       	<h2>Methodology</h2>
 	      	<p>
-	      		The team conducted unmoderated usability testing using a DEV sandbox site instead of a prototype to get a better understanding of how people would actually move through the account creation and MFA selection process. This would enable us to gauge how successful our attempts to encourage users to add a second MFA method are.
-	      	</p>	      		
+	      		The team conducted 12 unmoderated usability tests via UserTesting.com.
+	      	</p>
+	      	<p>
+	      		We used a developer sandbox site instead of a prototype to get a better understanding of how people would actually move through the account creation and MFA selection process.
+	      	</p>
 	  </div>
 
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Enable MFA Multi-select</h2>
+	      	<p>
+	      		Our first move was to switch the radio button to a checkbox. This minor change subtly indicates to users they can select more than one MFA method tile.
+	      	</p>
+	      	<p>
+	      		We then added "We recommend you select at least (2) two different options in case you lose one of your methods"
+	      	</p>
+	      	<img class="casestudy-pic greyBorder" data-src="login-2-multi/mult-01.png">
+		</div>
 
 		<div class="textCont2 largeText2"> 	
-	      	<h2>A - Illustration Layout</h2>
+	      	<h2>MFA Interstitial Upsell Page</h2>
 	      	<p>
-	      		To give new users more context we can provide them with illustrations that accompany each authentication method. The hypothesis was that users could scan through the options faster to make a decision.
+	      		In order to capture users who only selected one MFA method, we decided to add an interstitial "upsell" page after a user successfully sets up their first authentication method.
 	      	</p>
-
-	      	<img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/sketch-01.png">
-	      	<!-- <img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/login-a-01.png"> -->
-	      	<img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/login-a-02.png">
-
+	      	<p>
+	      		We explain to them that adding another authentication method would prevent them from being locked out from their account in case they lose one of their methods.
+	      	</p>
+	      	<img class="casestudy-pic greyBorder" data-src="login-2-multi/add-2nd.png">
 		</div>
 
 
 		<div class="textCont2 largeText2"> 	
-	      	<h2>B - Questionnaire Layout</h2>
+	      	<h2>User Flow</h2>
 	      	<p>
-	      		Using the principle of <a href="https://www.nngroup.com/articles/progressive-disclosure/">progressive disclosure,</a> I wanted to have users select one or more devices in a list instead of having to read through each authentication option. The hypothesis was that users would have an easier time selecting the devices they were familiar with before being presented with authentication options.
+	      		The video below illustrates the interstitial upsell screen popping up if a user only selects one MFA method. The primary call to action "Add another method" takes the user back to the authentication selection page to add another method.
 	      	</p>
-	      	<img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/sketch-02b.png">
-
-	      	<img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/login-b-ani.webp">
-	      	<!-- <img class="casestudy-pic greyBorder" data-src="login-1-illustration-content/login-a-02.png"> -->
+	      	<video src="login-2-multi/login-multi.webm" id="video/webm" playsinline autoplay muted loop></video>
 
 		</div>
-
 
 		<div class="textCont2 largeText2"> 	
 	      	<h2>Research Results</h2>
 	      		<p>
-	      			All users were able to successfully select an MFA method and comprehend how it secured their Login.gov account.
-				</p>
+	      			<b>All participants chose Phone/SMS as an MFA method. Of those participants:</b>
+	      		</p>
 
-	      		<b>4 of 6 users from Group B had positive comments on the Illustration layout.</b><br>
+	      		<b>10 of 12 participants set up Phone/SMS as their first, primary MFA method.</b><br>
 		      	<ul class="largeText">
 	    			<li>
-	    				“It's very detailed giving you information so you are making an informed decision before you select.”
+	    				<i>"I would typically use my phone. So I'll choose the phone."</i>
 	    			</li><br>
 	    			<li>
-	    				"This page is providing more descriptive info as to what each icon represents. It's explaining what they are and how it works."
+	    				<i>“I ended up using SMS because that's the easiest for me. I don't know about the codes or the keys. So yeah I would just pick the ‘Send me a text’ thing...”</i>
 	    			</li><br>
-	    			<li>
-	    				"You're actually explaining this to me now because I didn't know what a few of these were." 
-	    			</li></br>
-
 	    		</ul>
 
-	    		<b>
-	    		4 users from Group A and 1 user from Group B had positive comments on the Questionnaire layout.
-	    		</b><br>
+	    		<b>7 of 12 participants who selected and set up Phone/SMS ended up with that as their only MFA method.</b><br>
 		      	<ul class="largeText">
 	    			<li>
-	    				"This layout (Questionnaire) is really nice and straightforward, I don't have to scroll to see all of the options which is nice especially if I was on a smaller screen."
+	    				<i>“Let's just go with a simple one with our phone number, and we'll only do one of those [MFA methods].”</i>
 	    			</li><br>
-	    			<li>
-	    				"I think that's (Questionnaire) great because the graphics make sense and the writing is plain.”
-	    			</li><br>
-	    			<li>
-	    				“The choose device page is very simple and straightforward and the icons are helpful." (Questionnaire)
-	    			</li></br>
-	    			<!-- <li>
-	    				“I like the second one (Questionnaire) because it goes based on what you have and what you use.”
-	    			</li></br> -->
 	    		</ul>
 
 
-	    		<b>
-	    			5 of 6 users in Group B felt confused or unsure about what a Security Key or PIV Card was since there is no context for what they are in the Questionnaire layout.
-	    		</b><br>
+	    		<b>7 of 12 of participants selected 2 MFA methods on the first selection screen. Of those users:</b><br>
 		      	<ul class="largeText">
 	    			<li>
-	    				"I don't know about the security key or PIV. I've never been asked for them before." 
+	    				3 of 12 participants selected 2 MFA methods (Phone and Backup codes) on the first selection screen and set them both up successfully.
 	    			</li><br>
+	    				<ul class="largeText">
+	    					<li>
+	    						<i>"I selected more than one cause that's what the government recommended and also you can't be too safe. It's nice to have just in case your phone is broken, you can have the backup codes written down."</i>
+							</li><br>
+	    				</ul>
 	    			<li>
-	    				"PIV card I don't know what that is. Security key I don't know what that is either" 
+	    				4 of 12 participants selected 2 MFA methods on the first selection screen but only set up 1 MFA method, by either skipping or failing to set up the 2nd MFA method.
 	    			</li><br>
-	    			<li>
-	    				“The illustration [Security Key] is not of much use to me. Similarly the PIV card, I'm not familiar with, nor does the picture or illustration tell me much about it.”
-	    			</li></br>
+	    				<ul class="largeText">
+	    					<li>
+	    						<i>“I wanted to do two but then I didn't choose the codes since they were not very safe. If I were to do it again I would pick a second one and would add the authentication app.”</i>
+							</li><br>
+	    				</ul>
 	    		</ul>
 
-	    		<b>
-	    			8 out of 12 users preferred the “Illustration” direction over the “Questionnaire” direction since it offers descriptions up front.
-	    		</b><br>
+	    		<p>
+	      			<b>5 of 12 participants selected only 1 MFA method on the first selection screen. Of those users:</b>
+	      		</p>
+
+
+
+		      	<ul class="largeText">
+		      		<li>
+		      			3 of 12 selected only 1 MFA method (Phone/SMS) and opted to skip setting up a 2nd MFA when prompted/encouraged to.<br>
+	    			</li><br>
+	    				<ul class="largeText">
+	    					<li>
+	    						<i>“I did not select more than one cause that would drive me crazy! I'm more concerned about forgetting all my passwords than security as much as I probably shouldn't.”</i>
+	    					</li><br>
+	    					<li>
+	    						<i>"I believe I will skip for now because it [the UserTesting prompt] does not say to do that. I do think this is a good option to have right here too. Cause I'm already in the process of adding extra security features. Doing it while I'm already in the process is a good thing because I can do it later but I'll probably forget about it.”</i>
+	    				</ul>
+	    		</ul>
+
+	    		<!-- <b>x of x users from xxxx.</b><br>
 		      	<ul class="largeText">
 	    			<li>
-	    				"I'm going to go with the first one (Illustration) since it has little descriptions underneath, and that description can be very helpful. For me I know what it means but I'm sure other people could find it helpful."
+	    				xxxx
 	    			</li><br>
 	    			<li>
-	    				User preferred (Illustration) approach since it had all the descriptions listed in context. "I would have been quite lost without the explanations."
+	    				xxxx
 	    			</li><br>
 	    			<li>
-	    				“It's very detailed giving you information so you are making an informed decision before you select.”
+	    				xxxx 
 	    			</li></br>
-	    		</ul>
+	    		</ul> -->
 		</div>
 
 
@@ -194,11 +209,13 @@
 	      	<h2>Outcomes & Impacts</h2>
 		      	
 		      	<p>
-		      		From July 15 to July 18 2022, 50k users signed up with more than 1 MFA (multi-factor authentication method) on first account setup vs 192k users who selected just 1 MFA of those 192k users. 
+		      		<i>(Validating impact and results with project managers – STAY TUNED)</i>
 		      	</p>
+
 		      	<p>
-		      		We had 55k go to the second MFA screen to select a secondary MFA. 192k / 105k makes for a 55% improvement in users selecting a 2nd MFA method. This prevents the likelihood of these users getting locked out of their accounts if they lose access to one of their MFAs.
+		      		Additional efforts included notifying existing users that they should add another authentication method after signing in. We also created an email to remind users that they should add an additional MFA method if they only had one.
 		      	</p>
+		     
 		</div>
 
 
