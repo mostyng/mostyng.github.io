@@ -21,36 +21,67 @@
 	  <div class="heroImage loginHero">
 	      <div class="heroInfo">
 	      	<p class="heroLeft">Login.gov</p>
-	      	<p class="heroRite">Product • UX Research • Content Design</p>
+	      	<p class="heroRite">Product • UX Research • Animation</p>
 	      </div>
 	  </div>
 
 
 	  <div class="textCont2 largeText2">
-      	<h1>Team Katherine: Accounts & Authentication</h1>
+      	<h1>Improving security key understanding</h1>
       	<p>
-		</p>
+      		Preventing phishing of Login.gov accounts is crucial to protect both partner organizations and user data, as compromised accounts can risk funds, sensitive information, and systems. Team Katherine aimed to increase the use of phishing-resistant authentication methods, such as face/touch unlock, PIV, and security keys, as a primary goal for 2024. 
+	    </p>
       	<p>
-      		Designed an updated security key authentication method setup which led to a 50% percentage increase in user success rates immediately after new design implementation. Users could now see how to connect their USB security key in a step-by-step format with animated illustrations and a comprehensive help guide that addresses the most common issues users would run into.
+      		As of November 2023, only 12% of active users employed phishing-resistant methods, with 78% relying on phishable SMS, and by February 2024, just 66% of security key users successfully authenticated within two weeks. Enhancing the adoption of phishing-resistant multi-factor authentication depends on creating a seamless and user-friendly experience for security key integration.
       	</p>
 	  </div>
 
 
 
-	  	<!-- MULTISELECT DESIGNS -->
+	  	<!-- Security Key -->
 
 	  <div class="textCont2 largeText2"> 
       	<h2>The Challenge</h2>
 	      	<p>
-	      		In November 2021 Login.gov allowed users to set up only one Multi-Factor Authentication (MFA) method from the MFA Selection screen when first creating an account. 
+	      		We sampled 1,298 support tickets between January 21, 2023 - January 20, 2024. We found three key themes:
 	      	</p>
-	      	<p>
-	      		Since the current functionality limits users to only setting up one authentication method at account creation, many users don't realize they can add multiple MFA methods from their account page. Having only one MFA method increases their chances of being locked out and needing to go through the account recovery process. 
-	      	</p>
+	      	<ol class="largeText">
+    			<li>
+    				Process issues (433 tickets, ~33%): Issues ranged from users being unfamiliar with security keys to not having access to one while signing in. This coupled with a complicated sign in process — from authenticating to troubleshooting — created a frustrating user experience for many people, especially those with cognitive disabilities. 
+
+    			</li><br>
+    			<li>
+    				Multi-factor authentication (320 tickets, ~25%): Many security key tickets seemed mislabeled as other MFAs. In particular, there was a high number of face/touch unlock tickets mixed in due to shared systems messaging.
+    			</li><br>
+    			<li>
+    				Various codes (256 tickets, ~20%): Login.gov has a slew of different codes, and it's not clear what they are or what they do to users. This adds to additional confusion on top of some of the long processes users go through for account creation, identity verification, account reset, etc.
+    			</li></br>
+    		</ol>
+
+    		<p>
+    			Issues with the original security key setup page included a vague H1 "Add your security key" which wasn't specific enough to the authentication method since all the other methods used the same language of "add x method". The paragraph below also mentions FIDO standards which is not an important detail for the average user, adding to technical information overload.
+    		</p>
+
+
+    		<img class="casestudy-pic greyBorder" data-src="login-4-security-content/security-key-og-01.png">
+    		<br><br>
+
+    		<p>
+    			In addition, once the user clicks "Continue" they are met with whichever <a href="https://fidoalliance.org/passkeys/">passkey</a> setup modal their browser features.
+    		</p>
+    		<p>
+    			Chrome and Edge lead with a QR code, prompting users to scan it with their mobile device. The security key icon and text is diminished in these examples, adding to user confusion and making it less likely that they will be successful in setting up a security key.
+    		</p>
+    		<p>
+    			Safari and Firefox fare slightly better since they give equal weight to mobile passkeys and security keys. Windows is by far the best since it give users the option to set up a mobile passkey.
+    		</p>
+
+    		<img class="casestudy-pic greyBorder" data-src="login-4-security-content/security-key-prompts.png">
+
 	  </div>
 
 
-				  <div class="textCont2 largeText2"> 
+	<!-- div class="textCont2 largeText2"> 
       	<h2>Research Questions & Metrics</h2>
 	      	<p>
 	      		In order to prevent users from being locked out of their account and invoking the recovery process, we looked to test designs that encourage users to add at least two MFA methods during the account creation process.
@@ -59,19 +90,59 @@
     			<li>
     				How effective is the text content in convincing users to add a second MFA method on the first MFA selection screen?
     			</li><br>
+    		</ol>
+	  </div> -->
+
+
+	  <div class="textCont2 largeText2"> 	
+	      	<h2>Initial Content Updates</h2>
+	      	<p>
+	      		The first round of updates I made came in content changes throughout the setup page. This included an update to the H1: "Insert your security key into your computer's USB port" (mobile devices say, "phone's port"). This update made the text more specific and actionable over the original "Add your security key".
+	      	</p>
+	      	<p>
+	      		I also added a link out to a help article in case users needed more guidance or information for setting up or authenticating with their security key. Updated name label and CTA copy also utilized more specific language.
+	      	</p>
+	      	<img class="casestudy-pic greyBorder" data-src="login-4-security-content/security-key-v1.png">
+		</div>
+
+		<div class="textCont2 largeText2">
+
+			<h2>Outcomes & Impacts</h2>
+	  		
+	        <p>
+	        	Following the initial implementation an interesting comparison is looking at trends for security key following our content changes throughout April 2024. What I read here is:
+	        </p>  
+	        <p>
+	        	<ol class="largeText">
     			<li>
-    				How often will users only select one MFA method?
+    				The conversion rate noticeably decreases, because the content effectively communicates that most users are not eligible for setting up a security key.
     			</li><br>
     			<li>
-    				If users only select one MFA method will they add a 2nd method if they are prompted to later on in the account creation flow?
-    			</li></br>
-    			<li>
-    				How many users will forgo adding a 2nd method even when given another chance to add another MFA method?
+    				The overall success rate increases, because those who remain and choose to continue setting up the security key are more likely to have one and therefore are more likely to be successful. 
     			</li>
     		</ol>
+    		– Andrew Duthie, Lead Software Engineer
+	        </p>
+	        <img class="casestudy-pic greyBorder" data-src="login-4-security-content/security-key-stats.png">
+
 	  </div>
 
-	  
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Design & Content Revisions</h2>
+	      	<p>
+	      		Following initial successes I proposed and implemented wider design and content changes to the page since I thought there was an opportunity to use our process list (example below in our authentication app setup page). In addition I thought we could utilize illustration or an animation to further build user understanding.
+	      	</p>
+	      		<img class="casestudy-pic greyBorder" data-src="login-4-security-content/auth-app-setup.png"><br>
+	      	<br>
+	      	<p>
+	      		Below is my design of the updated security key setup page. I reordered and edited the content and hierarchy: enter a nickname, see an animation of how to use a security key, then finally directing users to click the "Set up security key" CTA. 
+	      	</p>
+	      	<p>
+	      		Using the Figma plugin, <a href="https://www.figma.com/community/plugin/980366185319754464/svg-animate">SVG Animate,</a> I was able to make an animation that demonstrates what a security key looks like and how to use it to authenticate.
+	      	</p>
+	      	<video src="login-4-security-content/security-key-setup.webm" id="video/webm" playsinline autoplay muted loop></video>
+		</div>
+
 
 
 
@@ -80,11 +151,11 @@
        	<h2>Outcomes & Impacts</h2>
   		
         <p>
-        	From July 15 to July 18 2022 today, 50k users signed up with more than 1 MFA (multi-factor authentication method) on first account setup vs 192k users who selected just 1 MFA of those 192k users we had 55k go to the second mfa screen and select a secondary MFA. 
+        	Following implementation of the second design there was a 50% improvement in the success rate in just one day. – Charles Hazen, Product Manager
         </p>  
-        <p>
-  			192k / 105k makes for a 55% improvement in users selecting a 2nd MFA method, which will prevent the likelihood of users getting locked out of their accounts if they lose access to one of their MFAs. 
-        </p>	      	
+        <!-- <p>
+        	x
+        </p> -->	      	
 	  </div>
 
 
