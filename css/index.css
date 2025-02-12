@@ -1,27 +1,27 @@
 @font-face
 {
-    font-family: authentic;
+    /*font-family: authentic;
 
-    src: url(../fonts/AUTHENTICSans-90.otf);
+    src: url(../fonts/AUTHENTICSans-90.otf);*/
+
 }
 
-@font-face
+/*@font-face
 {
     font-family: authentic-bold;
 
     src: url(../fonts/AUTHENTICSans-130.otf);
 }
-
+*/
 *{
     box-sizing: border-box;
 }
 
 
 
-
 body
 {
-    font-family: authentic;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     overflow-x: hidden;
 
@@ -87,7 +87,7 @@ p
 }*/
 h2
 {
-    font-family: authentic;
+/*    font-family: authentic;*/
     font-size: 24px;
 
     letter-spacing: 1px;
@@ -136,7 +136,7 @@ video{
 {
     display: inline-block;
 
-    font-family: authentic;
+/*    font-family: authentic;*/
     font-size: 16px;
     background-color: white;
     padding-left: 15px;
@@ -314,7 +314,7 @@ video{
     font-size:12px;
 
     color: white;
-    font-family: authentic-bold;
+/*    font-family: authentic-bold;*/
 
 
     margin-block-start: 1.5em;
@@ -697,13 +697,13 @@ input[type='checkbox']
 
 .largeText
 {
-    font-family: authentic;
+/*    font-family: authentic;*/
     font-size: 24px;
     line-height: 1.5;
 
 }
 .left.largeText{
-    font-family: authentic-bold;
+/*    font-family: authentic-bold;*/
     padding-right: 60px;
 }
 .leftCont
@@ -753,7 +753,7 @@ input[type='checkbox']
 }
 .projInfoInternal{
     padding-right: 60px;
-    font-family: authentic-bold;
+/*    font-family: authentic-bold;*/
 }
 .projInfoInternal p{
     letter-spacing: 1px;
