@@ -786,8 +786,8 @@ input[type='checkbox']
 */
 
 .embed-container {
-  --video--width: 1280;
-  --video--height: 720;
+  --video--width: 1920;
+  --video--height: 1080;
 
   position: relative;
   padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
