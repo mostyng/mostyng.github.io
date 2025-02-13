@@ -296,6 +296,9 @@ video{
 .baxterHero{
     background-image: url('../content/baxter/baxter-hero.svg');
 }
+.throwerHero{
+    background-image: url('../content/thrower/thrower-hero.svg');
+}
 
 .heroInfo
 {
