@@ -55,6 +55,7 @@ a:hover
 {
     transition: .2s;
     opacity: .7;
+    color: red;
 }
 /*a:visited{
     color: rgb(135,0,255);
@@ -142,7 +143,7 @@ video{
     padding-left: 15px;
     padding-right:15px;
 
-    letter-spacing: 1px;
+    letter-spacing: .3px;
 }
 .nav_header a{
     color: black;
@@ -293,6 +294,16 @@ video{
 .loginHero{
     background-image: url('../content/login/login-hero.svg');
 }
+.loginHero1{
+    background-image: url('../content/login/login-1.svg');
+}
+.loginHero2{
+    background-image: url('../content/login/login-2.svg');
+}
+.loginHero4{
+    background-image: url('../content/login/login-4.svg');
+}
+
 .baxterHero{
     background-image: url('../content/baxter/baxter-hero.svg');
 }
@@ -315,6 +326,7 @@ video{
 {
     letter-spacing: 1px;
     font-size:12px;
+    font-weight: bold;
 
     color: white;
 /*    font-family: authentic-bold;*/
@@ -444,7 +456,7 @@ video{
 }
 
 .fake{
-    display: none;
+/*    display: none;*/
 }
 
 .project-line{
@@ -964,7 +976,7 @@ img[data-src]
     
     .heroInfo p
     {
-        font-size: 16px;
+        font-size: 12px;
     }
     .simple{
         width: 100%;
