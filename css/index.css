@@ -90,7 +90,7 @@ h2
 /*    font-family: authentic;*/
     font-size: 24px;
 
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 /*    text-transform: uppercase;
 */}
 
@@ -450,7 +450,7 @@ video{
 }
 
 .patron{
-    font-size: 1.5vw;
+    font-size: 2.4vw;
 
     position: relative;
 
@@ -1031,7 +1031,7 @@ img[data-src]
     }
 
     .patron{
-        font-size: 1.5vw;
+        font-size: 2vw;
 
         padding-top: 16px;
         padding-bottom: 16px;

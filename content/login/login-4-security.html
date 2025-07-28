@@ -29,10 +29,10 @@
 	  <div class="textCont2 largeText2">
       	<h1>Improving security key understanding</h1>
       	<p>
-      		Preventing phishing of Login.gov accounts is crucial to protect both partner organizations and user data, as compromised accounts can risk funds, sensitive information, and systems. Team Katherine aimed to increase the use of phishing-resistant authentication methods such as face/touch unlock, government employee IDs (PIV/CAC), and security keys, as a primary goal for 2024. 
+      		Preventing phishing of Login.gov accounts is crucial to protect both partner organizations and user data, as compromised accounts can risk funds, sensitive information, and systems. Our team aimed to increase the use of phishing-resistant authentication methods such as passkeys, government employee IDs, and security keys, as a primary goal for 2024. 
 	    </p>
       	<p>
-      		As of November 2023, only 12% of active users employed phishing-resistant methods, with 78% relying on phishable SMS. By February 2024, just 66% of security key users successfully authenticated within two weeks. Enhancing the adoption of phishing-resistant multi-factor authentication (MFA) depends on creating a seamless and user-friendly experience for security key integration.
+      		As of November 2023, only 12% of active users employed phishing-resistant methods, with 78% relying on phishable SMS one-time passcodes. By February 2024, just 66% of security key users successfully authenticated within two weeks. Enhancing the adoption of phishing-resistant multi-factor authentication (MFA) depends on creating a seamless and user-friendly experience for security key integration.
       	</p>
 	  </div>
 
@@ -51,10 +51,10 @@
 
     			</li><br>
     			<li>
-    				Multi-factor authentication (320 tickets, ~25%): Many security key tickets seemed mislabeled as other MFAs. In particular, there was a high number of face/touch unlock tickets mixed in due to shared systems messaging.
+    				Multi-factor authentication (320 tickets, ~25%): Many security key tickets seemed mislabeled as other MFAs. In particular, there was a high number of face/touch unlock (passkey) tickets mixed in due to shared systems messaging.
     			</li><br>
     			<li>
-    				Various codes (256 tickets, ~20%): Login.gov has a slew of different codes, and for some users it's not clear what they are or what they do. This adds to additional confusion on top of some of the long processes users go through for account creation, identity verification, and account reset.
+    				Various codes (256 tickets, ~20%): Login.gov has a variety of different codes, and for some users it's not clear what they are or what they do. This adds to additional confusion on top of some of the long processes users go through for account creation, identity verification, and account reset.
     			</li></br>
     		</ol>
 
@@ -105,6 +105,31 @@
 	      	<img class="casestudy-pic greyBorder" data-src="login-4-security-content/security-key-v1.png">
 		</div>
 
+		
+		<div class="textCont2 largeText2"> 	
+	      	<h2>Design & Content Revisions</h2>
+	      	<p>
+	      		After the first set of improvements, I felt there was an additional opportunity to use our process list to break down the steps (example below in our authentication app setup page). I also thought we could create an illustration or an animation to further build user understanding.
+	      	</p>
+	      		<img class="casestudy-pic greyBorder" data-src="login-4-security-content/auth-app-setup.png"><br>
+	      	<br>
+	      	<p>
+	      		Below is my design of the updated security key setup page. I reordered and edited the content and hierarchy: enter a nickname, see an animation of how to use a security key, and finally directed users to click the "Set up security key" CTA. 
+	      	</p>
+	      	<p>
+	      		Using the Figma plugin, <a href="https://www.figma.com/community/plugin/980366185319754464/svg-animate">SVG Animate,</a> I was able to make an animation that demonstrates what a security key looks like and how to use it to authenticate.
+	      	</p>
+	      	<video src="login-4-security-content/security-key-setup-v2.webm" id="video/webm" playsinline autoplay muted loop></video>
+	      	<br><br>
+
+	      	<p>
+	      		The version below illustrates how a user should insert their security key into their mobile device.
+	      	</p>
+	      	<video class="casestudy-pic greyBorder" src="login-4-security-content/security-key-mobile.webm" id="video/webm" playsinline autoplay muted loop></video>
+		</div>
+
+
+
 		<div class="textCont2 largeText2">
 
 			<h2>Outcomes & Impacts</h2>
@@ -127,42 +152,6 @@
 
 	  </div>
 
-		<div class="textCont2 largeText2"> 	
-	      	<h2>Design & Content Revisions</h2>
-	      	<p>
-	      		Following the initial success, I had also proposed larger design and content changes to the page since there was an additional opportunity to use our process list to break down the steps (example below in our authentication app setup page). I thought we could also utilize illustration or an animation to further build user understanding.
-	      	</p>
-	      		<img class="casestudy-pic greyBorder" data-src="login-4-security-content/auth-app-setup.png"><br>
-	      	<br>
-	      	<p>
-	      		Below is my design of the updated security key setup page. I reordered and edited the content and hierarchy: enter a nickname, see an animation of how to use a security key, and finally directed users to click the "Set up security key" CTA. 
-	      	</p>
-	      	<p>
-	      		Using the Figma plugin, <a href="https://www.figma.com/community/plugin/980366185319754464/svg-animate">SVG Animate,</a> I was able to make an animation that demonstrates what a security key looks like and how to use it to authenticate.
-	      	</p>
-	      	<video src="login-4-security-content/security-key-setup-v2.webm" id="video/webm" playsinline autoplay muted loop></video>
-	      	<br><br>
-
-	      	<p>
-	      		The version below illustrates how a user should insert their security key into their mobile device.
-	      	</p>
-	      	<video class="casestudy-pic greyBorder" src="login-4-security-content/security-key-mobile.webm" id="video/webm" playsinline autoplay muted loop></video>
-		</div>
-
-
-
-
-
-	  <div class="textCont2 largeText2">
-       	<h2>Outcomes & Impacts</h2>
-  		
-        <p>
-        	Following implementation of the second design there was a 50% improvement in the success rate in just one day. – Charles Hazen, Product Manager
-        </p>  
-        <!-- <p>
-        	More data to come!
-        </p> -->	      	
-	  </div>
 
 
 	  <!-- Copyright -->
