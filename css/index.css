@@ -85,12 +85,19 @@ p
 
          -o-user-select: none;
 }*/
+
+h1{
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+
+}
 h2
 {
 /*    font-family: authentic;*/
-    font-size: 24px;
+    font-size: 32px;
 
-    letter-spacing: .5px;
+    letter-spacing: -.5px;
 /*    text-transform: uppercase;
 */}
 
@@ -301,6 +308,9 @@ video{
 }
 .loginHero4{
     background-image: url('../content/login/login-4.svg');
+}
+.loginHero5{
+    background-image: url('../content/login/login-5.svg');
 }
 
 .baxterHero{
@@ -1080,6 +1090,9 @@ img[data-src]
 /*        padding-right: 16px;
         padding-left: 16px;
 */    }
+    h1{
+        font-size: 24px;
+    } 
     h2{
         font-size: 16px;
     }
