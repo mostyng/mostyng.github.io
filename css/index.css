@@ -99,11 +99,9 @@ h2
     letter-spacing: -.5px;
 /*    text-transform: uppercase;
 */}
-
-    h3{
-        font-size: 24px;
-
-    }
+h3{
+    font-size: 24px;
+}
 
 ul{
     list-style-type:disc;
@@ -726,6 +724,9 @@ input[type='checkbox']
 .showingWork{
     background-color: #F3F3F3
 }
+.showingWork.white{
+    background-color: white;
+}
 .showingContent{
     padding-left: 24px;
 }
@@ -1095,13 +1096,17 @@ img[data-src]
         padding-left: 16px;
 */    }
     h1{
-        font-size: 24px;
+        font-size: 32px;
+        letter-spacing: -.5px;
     } 
     h2{
-        font-size: 16px;
+        font-size: 24px;
+        letter-spacing: 0.2px;
     }
     h3{
-        padding-left: 16px;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+
     }
 
     .fake{
