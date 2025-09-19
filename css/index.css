@@ -326,6 +326,9 @@ video{
 .throwerHero{
     background-image: url('../content/thrower/thrower-hero.svg');
 }
+.ateliernidoHero{
+    background-image: url('../content/atelier-nido/an-hero.png');
+}
 
 .first_para
 {
