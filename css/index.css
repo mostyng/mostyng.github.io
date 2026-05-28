@@ -124,6 +124,14 @@ nav
 
 
     justify-content: space-between;
+    transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+nav.site-nav--hidden
+{
+    transform: translateY(-100%);
+    pointer-events: none;
 }
 
 video{
