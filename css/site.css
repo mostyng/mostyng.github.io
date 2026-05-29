@@ -56,6 +56,31 @@ img {
 .site-nav__inner {
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Nav links */
+.site-nav__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.site-nav__links a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.site-nav__links a:hover,
+.site-nav__links a[aria-current="page"] {
+  opacity: 1;
 }
 
 .site-nav.site-nav--hidden {
@@ -134,7 +159,7 @@ h2.project-title {
   margin: 0;
   font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.01em;
 }
 
 .project-type {
@@ -146,6 +171,14 @@ h2.project-title {
   text-transform: uppercase;
   border: 1px solid var(--white);
   border-radius: 8px;
+}
+
+.project-teaser {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: 10px;
 }
 
 .project-image-container {
@@ -276,5 +309,135 @@ h2.project-title {
 @media (prefers-reduced-motion: reduce) {
   .site-nav {
     transition: none;
+  }
+}
+
+/* Project year tag (homepage cards) */
+.project-year {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ==========================================
+   About page
+   ========================================== */
+
+.about-main {
+  padding: 0 48px 100px;
+}
+
+.about-section {
+  max-width: var(--intro-max);
+  margin: 0 auto;
+}
+
+.about-bio-text {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.about-bio-text a {
+  color: var(--white);
+}
+
+.about-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 64px auto;
+  max-width: var(--intro-max);
+}
+
+.section-label {
+  margin: 0 0 28px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.about-role {
+  margin-bottom: 36px;
+}
+
+.about-role:last-child {
+  margin-bottom: 0;
+}
+
+.about-role-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin-bottom: 6px;
+}
+
+.about-role-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.about-role-title {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.about-role-years {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.02em;
+}
+
+.about-role-desc {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-link-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--white);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.about-link-btn:hover {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 991px) {
+  .about-main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 479px) {
+  .about-role-years {
+    margin-left: 0;
+    width: 100%;
   }
 }
