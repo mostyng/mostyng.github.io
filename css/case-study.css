@@ -21,6 +21,30 @@
 .site-nav--light .site-nav__inner {
   max-width: 1800px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav--light .site-nav__links a {
+  color: #111;
+  opacity: 0.55;
+}
+
+.site-nav--light .site-nav__links a:hover,
+.site-nav--light .site-nav__links a[aria-current="page"] {
+  opacity: 1;
+}
+
+/* Year label in case study header */
+.year-label {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
 }
 
 /* Sections */
