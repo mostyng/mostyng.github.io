@@ -26,7 +26,7 @@ CDN_VIDEO_BASE = "https://cdn.prod.website-files.com/68d9d5fedda8c841de1ca7fb%2F
 
 SITE = {
     "name": "Mostyn Griffith",
-    "url": "https://mostyngriffith.com",
+    "url": "https://www.mostyngriffith.com",
     "email": "mostyn.griffith@gmail.com",
     "linkedin": "https://www.linkedin.com/in/mostyn-griffith/",
     "role": "Staff Product Designer at Login.gov",
