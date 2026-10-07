@@ -7,8 +7,20 @@
 
   // Header border on scroll
   var header = document.querySelector(".site-header");
-  function onScroll() { header && header.classList.toggle("is-scrolled", window.scrollY > 8); }
+  // Hide header when scrolling down, reveal when scrolling up
+  var lastY = window.scrollY;
+  function onScroll() {
+    if (!header) return;
+    var y = window.scrollY;
+    header.classList.toggle("is-scrolled", y > 8);
+    var delta = y - lastY;
+    if (Math.abs(delta) < 6) return;
+    var hide = delta > 0 && y > header.offsetHeight && !header.contains(document.activeElement);
+    header.classList.toggle("is-hidden", hide);
+    lastY = y;
+  }
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  if (header) header.addEventListener("focusin", function () { header.classList.remove("is-hidden"); });
 
   // Videos: play/pause toggle, respect reduced motion, pause when off-screen
   document.querySelectorAll(".video").forEach(function (fig) {
