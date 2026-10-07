@@ -69,7 +69,7 @@ HIGHLIGHTS = [
     ("150M+", "people can use Login.gov to reach government services", "login-help-center"),
     ("55% → 83%", "support calls resolved without an agent", "login-help-center"),
     ("3.6% → 34.5%", "new users protected by 2+ sign-in methods", "login-gov-authentication"),
-    ("20K → 150K", "Flare daily active users", "flare"),
+    ("0 → 500K", "Flare monthly active users", "flare"),
 ]
 
 
@@ -340,7 +340,6 @@ def work_card(p, root, index, large):
   </a>
   <div class="case__body">
     <p class="case__index">{index:02d}{(' · ' + esc(p['years'])) if p.get('years') else ''}</p>
-    <ul class="tags">{tags_html(p['tags'])}</ul>
     <h3 class="case__title"><a href="{href}">{title}</a></h3>
     <p class="case__summary">{esc(p['summary'])}</p>
     <p class="case__teaser"><span>Outcome</span>{esc(p.get('teaser', ''))}</p>
@@ -350,7 +349,6 @@ def work_card(p, root, index, large):
     return f"""<article class="tile">
   <a href="{href}">
     <div class="tile__media"><img src="{img}" alt="" loading="lazy" decoding="async"></div>
-    <ul class="tags">{tags_html(p['tags'])}</ul>
     <h3 class="tile__title">{title}{(' <span class="tile__year">' + esc(p['years']) + '</span>') if p.get('years') else ''}</h3>
     <p class="tile__teaser">{esc(p.get('teaser', ''))}</p>
   </a>
@@ -391,7 +389,6 @@ def build_index(pages):
 
   <section class="work wrap" id="work" aria-labelledby="work-title">
     <div class="section-head">
-      <p class="eyebrow">Selected work</p>
       <h2 id="work-title" class="section-title">Product case studies</h2>
     </div>
     {cases}
@@ -456,8 +453,7 @@ def build_case(p, nxt):
   <article>
     <header class="case-hero wrap">
       <a class="back" href="{root}index.html#work">← All work</a>
-      <ul class="tags">{tags_html(p['tags'])}</ul>
-      <h1 class="case-hero__title">{inline(title)}</h1>
+        <h1 class="case-hero__title">{inline(title)}</h1>
       <p class="case-hero__summary">{esc(p['summary'])}</p>
       <dl class="meta">
         <div><dt>My role</dt><dd>{esc(p.get('role', ''))}</dd></div>
