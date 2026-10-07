@@ -379,14 +379,9 @@ def build_index(pages):
     page += "<body>\n" + header(root)
     page += f"""<main id="main">
   <section class="hero wrap">
-    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{esc(SITE['role'])}</p>
     <h1 class="hero__title">Making government services <em>a little more intuitive</em> for the people who depend on them.</h1>
     <div class="hero__foot">
       <p class="hero__lede">I'm Mostyn, a product designer working across content, interaction and research. At Login.gov I help over 150 million people sign in to the benefits and services they rely on.</p>
-      <div class="hero__actions">
-        <a class="btn" href="#work">See the work</a>
-        <a class="btn btn--ghost" href="mailto:{SITE['email']}">Get in touch</a>
-      </div>
     </div>
   </section>
 
