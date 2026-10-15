@@ -304,7 +304,6 @@ def header(root, current=""):
 def footer(root):
     return f"""<footer class="site-footer" id="contact">
   <div class="wrap">
-    <p class="eyebrow">Contact</p>
     <h2 class="site-footer__title">Have a role or a hard problem in mind?<br><em>Let's talk.</em></h2>
     <div class="site-footer__actions">
       <a class="btn btn--light" href="mailto:{SITE['email']}">{SITE['email']}</a>
