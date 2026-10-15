@@ -58,7 +58,7 @@ EXPERIENCE = [
     ("Flare", "Head of Design / Founding Designer", "2017–2024"),
     ("Native Design", "Senior UX Designer", "2021"),
     ("IBM Watson", "AI Product Designer", "2019–2021"),
-    ("HUSH Studios", "Experience Designer", "2018–2021"),
+    ("HUSH Studios", "Experiential Designer", "2018–2019"),
 ]
 EDUCATION = [
     ("Rhode Island School of Design", "BFA Graphic Design with Honors", "2014–2018"),
@@ -289,14 +289,12 @@ def header(root, current=""):
         <source srcset="{asset(SITE['logo_light'], root)}" media="(prefers-color-scheme: dark)">
         <img src="{asset(SITE['logo_dark'], root)}" alt="" width="28" height="28">
       </picture>
-      <span>Mostyn Griffith</span>
     </a>
     <nav class="nav" aria-label="Primary">
       <a href="{root}index.html#work"{' aria-current="page"' if current == 'work' else ''}>Work</a>
       <a href="{root}index.html#about">About</a>
       <a href="{root}{SITE['resume']}">Resume</a>
       <a href="{SITE['linkedin']}" rel="noopener">LinkedIn</a>
-      <a class="nav__cta" href="mailto:{SITE['email']}">Get in touch</a>
     </nav>
   </div>
 </header>

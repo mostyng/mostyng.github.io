@@ -119,12 +119,8 @@ a { color: inherit; }
 .nav { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 30px); font-size: 15px; }
 .nav a { text-decoration: none; color: var(--ink-2); }
 .nav a:hover { color: var(--ink); }
-.nav__cta { padding: 9px 16px; border-radius: 999px; background: var(--ink); color: var(--paper) !important; }
-.nav__cta:hover { background: var(--accent); color: var(--on-accent) !important; }
 @media (max-width: 640px) {
-  .brand span { display: none; }
   .nav { gap: 16px; font-size: 14px; }
-  .nav a[href*="linkedin"] { display: none; }
 }
 
 /* ---------------------------------------------------------------- hero */
@@ -215,7 +211,6 @@ a { color: inherit; }
 .exp li strong { display: block; font-weight: 500; }
 .exp li em { display: block; font-style: normal; color: var(--muted); font-size: 14px; }
 .tile__year { font: 400 15px/1 var(--sans); color: var(--muted); margin-left: 6px; }
-@media (max-width: 640px) { .nav a[href*="resume"] { display: none; } }
 .exp--links a { text-decoration: none; }
 .exp--links a:hover { color: var(--accent); }
 @media (max-width: 860px) { .about__grid { grid-template-columns: 1fr; } }
