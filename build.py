@@ -273,7 +273,7 @@ def head(title, description, root, image, path):
 <link rel="icon" href="{asset(SITE['favicon'], root)}" type="image/png">
 <link rel="apple-touch-icon" href="{asset(SITE['touch_icon'], root)}">
 <link rel="preload" href="{root}static/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{root}static/fonts/TimesNow-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{root}static/fonts/Newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{root}static/style.css">
 </head>
 """
