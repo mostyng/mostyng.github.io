@@ -272,9 +272,8 @@ def head(title, description, root, image, path):
 <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="{asset(SITE['favicon'], root)}" type="image/png">
 <link rel="apple-touch-icon" href="{asset(SITE['touch_icon'], root)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="{root}static/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{root}static/fonts/TimesNow-Light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{root}static/style.css">
 </head>
 """
