@@ -95,6 +95,11 @@ def asset(ref, root, video=False):
     return (CDN_VIDEO_BASE if video else CDN_BASE) + ref
 
 
+def figure(value):
+    """Big-number text; the arrow is set in the sans font so it sits evenly."""
+    return esc(value).replace(" → ", '<span class="arr" aria-hidden="true">→</span><span class="sr-only"> to </span>')
+
+
 def inline(text):
     t = esc(text)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
@@ -273,7 +278,7 @@ def head(title, description, root, image, path):
 <link rel="icon" href="{asset(SITE['favicon'], root)}" type="image/png">
 <link rel="apple-touch-icon" href="{asset(SITE['touch_icon'], root)}">
 <link rel="preload" href="{root}static/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{root}static/fonts/Newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{root}static/fonts/LibreCaslonCondensed.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{root}static/style.css">
 </head>
 """
@@ -357,7 +362,7 @@ def build_index(pages):
     other = [p for p in pages if not p["featured"]]
     by_slug = {p["slug"]: p for p in pages}
     highlights = "".join(
-        f'<li><a href="work/{s}/index.html"><strong>{esc(v)}</strong><span>{esc(l)}</span></a></li>'
+        f'<li><a href="work/{s}/index.html"><strong>{figure(v)}</strong><span>{esc(l)}</span></a></li>'
         for v, l, s in HIGHLIGHTS if s in by_slug)
     cases = "\n".join(work_card(p, root, n, True) for n, p in enumerate(featured, 1))
     tiles = "\n".join(work_card(p, root, 0, False) for p in other)
@@ -435,7 +440,7 @@ def build_case(p, nxt):
     stats = ""
     if p["stats"]:
         stats = '<ul class="stats">' + "".join(
-            f"<li><strong>{esc(v)}</strong><span>{esc(l)}</span></li>" for v, l in p["stats"]) + "</ul>"
+            f"<li><strong>{figure(v)}</strong><span>{esc(l)}</span></li>" for v, l in p["stats"]) + "</ul>"
     link = ""
     if p.get("link"):
         link = f'<a class="btn btn--ghost" href="{esc(p["link"][0])}" rel="noopener">{esc(p["link"][1])} ↗</a>'
