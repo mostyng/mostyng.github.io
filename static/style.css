@@ -235,11 +235,13 @@ a { color: inherit; }
 .back:hover { color: var(--ink); }
 .case-hero__title { margin: 0 0 22px; font: 400 clamp(40px, 6.2vw, 84px)/1.0 var(--serif); letter-spacing: -.02em; max-width: 18ch; text-wrap: balance; }
 .case-hero__summary { margin: 0 0 36px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.5; color: var(--ink-2); max-width: 52ch; }
-.meta { margin: 0 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px 40px; max-width: 900px; padding-top: 22px; border-top: 1px solid var(--line); }
+/* Role/team/timeline and the stat cards share one 3-column grid so their columns line up */
+.meta, .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; max-width: 1080px; }
+.meta { margin: 0 0 32px; row-gap: 20px; padding-top: 22px; border-top: 1px solid var(--line); }
 .meta dt { font: 500 12px/1.2 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
 .meta dd { margin: 0; font-size: 16px; }
-@media (max-width: 640px) { .meta { grid-template-columns: 1fr; } }
-.stats { list-style: none; margin: 0 0 28px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; max-width: 980px; }
+@media (max-width: 640px) { .meta, .stats { grid-template-columns: 1fr; } }
+.stats { list-style: none; margin: 0 0 28px; padding: 0; row-gap: 12px; }
 .stats li { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
 .stats strong { display: block; font: 400 clamp(30px, 3vw, 40px)/1 var(--serif); color: var(--accent); margin-bottom: 8px; }
 .stats span { font-size: 14px; color: var(--muted); line-height: 1.4; display: block; }
