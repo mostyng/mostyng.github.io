@@ -1,5 +1,5 @@
 ---
-title: Designing for Problems, Not Pages: Login.gov Support
+title: Designing for problems, not pages: Login.gov Support
 short: Login.gov Help Center
 slug: login-help-center
 years: 2024–2025
