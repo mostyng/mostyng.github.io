@@ -340,7 +340,6 @@ def work_card(p, root, index, large):
     <img src="{img}" alt="" loading="{'eager' if index == 1 else 'lazy'}" decoding="async">
   </a>
   <div class="case__body">
-    <p class="case__index">{index:02d}{(' · ' + esc(p['years'])) if p.get('years') else ''}</p>
     <h3 class="case__title"><a href="{href}">{title}</a></h3>
     <p class="case__summary">{esc(p['summary'])}</p>
     <p class="case__teaser"><span>Outcome</span>{esc(p.get('teaser', ''))}</p>
